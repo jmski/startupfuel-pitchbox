@@ -13,14 +13,12 @@ const NavigationBar = () => {
             setButton(true);
         }
     };
-    {/*This prevents the sign up button to load more than once if user F5*/}
-    useEffect(() => {
-        showButton()
-    }, [ ]);
+    /*This prevents the sign up button to load more than once if user F5*/
+    useEffect( () => { showButton() }, [ ] );
 
     window.addEventListener('resize', showButton);
 
-    {/* toggle between states when user clicks on icon*/}
+    /* toggle between states when user clicks on icon*/
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
