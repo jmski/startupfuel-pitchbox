@@ -1,18 +1,81 @@
 .divider-container {
+
+}
+
+.divider-download {
     background-color: #120231;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     object-fit: contain;
     padding: 2rem;
 }
 
-.divider-container > h1 {
+.divider-download > h1 {
+    text-align: center;
     color: #fff;
 }
+
+
+.divider-pitchbox-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "a b c d";
+}
+
+.item1 {
+    grid-area: a;
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: d;
+}
+
+
+.divider-pitchbox-grid img {
+    padding: 1rem;
+    width: 100%;
+    max-width:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider-pitchbox {
+    padding: 1rem;
+    text-align: center;
+    grid-area: e;
+}
+
 
 .divider-btns {
     padding-top: 1rem;
     align-items: center;
     text-align: center;
 }
+
+.pitchbox-btns {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .divider-download > h1 {
+        font-size: 35px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .divider-download > h1 {
+        font-size: 20px;
+    }
+  }

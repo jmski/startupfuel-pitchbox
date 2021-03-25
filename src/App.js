@@ -10,9 +10,12 @@ class App extends Component {
 		return (
 			<BrowserRouter>
 				<NavigationBar />
-				<Home/>
+				
 				<Switch>
 					<Route exact path='/' component={Home}/>
+					<Route path='/services' />
+					<Route path='/contact' />
+					<Route path='/signup' />
 
 				</Switch>
 			</BrowserRouter>
