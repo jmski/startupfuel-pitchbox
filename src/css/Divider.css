@@ -1,0 +1,18 @@
+.divider-container {
+    background-color: #120231;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+.divider-container > h1 {
+    color: #fff;
+}
+
+.divider-btns {
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+}

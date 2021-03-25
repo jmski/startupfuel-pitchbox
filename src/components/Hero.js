@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from './Button';
 import '../css/Hero.css';
+import '../css/App.css';
 
 class Hero extends Component {
     render() {
@@ -13,10 +14,17 @@ class Hero extends Component {
                 <div className="hero-btns">
                     <Button
                         className="btns"
-                        buttonStyle='btn--outline' 
+                        buttonStyle='btn--primary' 
                         buttonSize='btn--large'
                     >
                         Request a Demo
+                    </Button>
+                    <Button
+                        className="btns"
+                        buttonStyle='btn--outline' 
+                        buttonSize='btn--large'
+                    >
+                        Learn More
                     </Button>
                 </div>
             </div>
