@@ -2,7 +2,7 @@ export const homeObjOne = {
     id: 'download',
     lightBg: true,
     lightText: false,
-    lightTextDesc: false,
+    darkText: true,
     topLine: 'PitchBox Marketing Pack',
     headLine: 'Download the package',
     description: 'Learn more about features for free',
@@ -11,15 +11,14 @@ export const homeObjOne = {
     img: require('../../images/svg-1.svg').default,
     alt: 'Download the Marketing Package',
     dark: true,
-    primary: true,
-    darkText: true
+    primary: true
 };
 
 export const homeObjTwo = {
-    id: 'about',
+    id: ' ',
     lightBg: false,
     lightText: true,
-    lightTextDesc: true,
+    darkText: false,
     // topLine: 'PitchBox Marketing Pack',
     // headLine: 'Download the package',
     description: 'Lower the overhead expenses and simplify your Angel Network, VC Fund, Corporate Fund, or Startup Accelerator with the PitchBox. ',
@@ -28,8 +27,7 @@ export const homeObjTwo = {
     img: require('../../images/svg-2.svg').default,
     alt: 'View Active PitchBoxes',
     dark: true,
-    primary: true,
-    darkText: false
+    primary: true
 };
 
 export const homeObjThree = {
@@ -45,5 +43,5 @@ export const homeObjThree = {
     img: require('../../images/PitchBoxIconTop.png').default,
     alt: 'Marketing Package',
     dark: true,
-    primary: true,
+    primary: true
 };
