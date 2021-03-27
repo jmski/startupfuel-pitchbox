@@ -1,26 +1,14 @@
-import React, { Component } from 'react';
-import NavigationBar from './components/NavigationBar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import Home from './components/Home';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './css/App.css';
 
-class App extends Component {
-	render() {
-		return (
-			<BrowserRouter>
-				<NavigationBar />
-				
-				<Switch>
-					<Route exact path='/' component={Home}/>
-					<Route path='/services' />
-					<Route path='/contact' />
-					<Route path='/signup' />
+import Home from './pages';
 
-				</Switch>
-			</BrowserRouter>
-		);
-	}
+const App = () => {
+    return (
+        <Router>
+            <Home />
+        </Router>
+    );
 }
 
 export default App;
