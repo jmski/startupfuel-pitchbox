@@ -104,7 +104,7 @@ export const NavMenu = styled.ul`
 
         export const NavBtnLink = styled(LinkR)`
             border-radius: 50px;
-            background: orangered;
+            background: #FF8E05;
             white-space: nowrap;
             padding: 10px 22px;
             color: #fff;

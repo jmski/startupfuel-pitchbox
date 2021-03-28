@@ -3,11 +3,12 @@ import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
+import Services from '../components/Services';
 
 import { homeObjOne } from '../components/Info/data';
 import { homeObjTwo } from '../components/Info/data';
 import { homeObjThree } from '../components/Info/data';
-
+import { homeObjFour } from '../components/Info/data';
 
 const Home = () => {  
     const [ isOpen, setIsOpen ] = useState(false);
@@ -23,6 +24,8 @@ const Home = () => {
             <Info {...homeObjOne}/>
             <Info {...homeObjTwo}/>
             <Info {...homeObjThree} />
+            <Services />
+            <Info {...homeObjFour} />
         </>
     )
 }
