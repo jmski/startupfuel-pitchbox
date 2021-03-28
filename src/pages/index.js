@@ -4,6 +4,7 @@ import SideBar from '../components/SideBar';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 import { homeObjOne } from '../components/Info/data';
 import { homeObjTwo } from '../components/Info/data';
@@ -26,8 +27,9 @@ const Home = () => {
             <Info {...homeObjThree} />
             <Services />
             <Info {...homeObjFour} />
+            <Footer />
         </>
-    )
-}
+    );
+};
 
 export default Home;
