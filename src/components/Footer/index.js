@@ -21,10 +21,16 @@ import {
     SocialIcons,
     SocialIconLink
 } from './FooterElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 import img from '../../images/watermark-light.png';
 
 const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
             <FooterContainer>
@@ -58,7 +64,7 @@ const Footer = () => {
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to='/'>
-                                <SocialImg src={ img }/>
+                                <SocialImg src={ img } onClick={toggleHome}/>
                             </SocialLogo>
                             <WebsiteRights>© 2020 StartupFuel Inc.  All Rights Reserved.</WebsiteRights>
                             <SocialIcons>
