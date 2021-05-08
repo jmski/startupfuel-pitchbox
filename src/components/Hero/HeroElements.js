@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,27 +18,36 @@ export const HeroContainer = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-                180deg,
-                rgba(0,0,0,0.2) 0%,
-                rgba(0,0,0,0.6) 100%
-            ),
-            linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2;
-    }
-`;
+    }`;
 
 export const HeroBg = styled.div`
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: -100px;
     width: 100%;
     height: 100%;
+    width: 1200px;
+    height: 400px;
     overflow: hidden;
-`;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotate(-10deg);
 
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}`;
+/*
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
@@ -47,6 +56,7 @@ export const VideoBg = styled.video`
     background: #232323;
 `;
 
+
 export const ImgBg = styled.img`
     width: 100%;
     height: 100%;
@@ -54,6 +64,7 @@ export const ImgBg = styled.img`
     object-fit: cover;
     background: #232343;
 `;
+*/
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -66,7 +77,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #fff;
+    color: #0c0c0c;
     font-size: 48px;
     text-align: center;
 
@@ -81,7 +92,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
     margin-top: 24px;
-    color: #fff;
+    color: #0c0c0c;
     font-size: 24px;
     text-align: center;
     max-width: 600px;

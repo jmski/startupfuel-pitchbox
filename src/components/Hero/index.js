@@ -19,7 +19,7 @@ import imgbg from '../../images/Spiral-light.jpg';
 
 const Hero = () => {
 
-    const [ hover, setHover ] = useState(false)
+    const [ hover, setHover ] = useState(false);
     const onHover = () => {
         setHover(!hover);
     }
@@ -27,8 +27,8 @@ const Hero = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={ videobg } type='video/mp4' />
-                <ImgBg src={ imgbg }/>
+                {/* <VideoBg autoPlay loop muted src={ videobg } type='video/mp4' />
+                <ImgBg src={ imgbg }/> */}
             </HeroBg>
             <HeroContent>
                 <HeroH1>Dealflow Management For Startup Investors</HeroH1>
