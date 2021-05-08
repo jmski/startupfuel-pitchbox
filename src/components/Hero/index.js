@@ -3,8 +3,6 @@ import { Button } from '../ButtonElements';
 import {
     HeroContainer,
     HeroBg,
-    ImgBg,
-    VideoBg,
     HeroContent,
     HeroH1,
     HeroP,
@@ -14,8 +12,8 @@ import {
 } from './HeroElements';
 
 /* video bg provided by pexels free video stock */
-import videobg from '../../videos/pexels-ivan-samkov-7252805.mp4';
-import imgbg from '../../images/Spiral-light.jpg';
+// import videobg from '../../videos/pexels-ivan-samkov-7252805.mp4';
+// import imgbg from '../../images/Spiral-light.jpg';
 
 const Hero = () => {
 
