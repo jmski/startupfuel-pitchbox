@@ -1,18 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './css/App.css';
+import { GlobalStyles } from './components/GlobalStyles';
 
-import Home from './pages';
-import Demo from './pages/demo';
+import Home from './pages/home';
 
-const App = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route path='/' component={Home} exact />
-                <Route path='/demo' component={Demo} exact />
-            </Switch>
-        </Router>
-    );
+function App() {
+  return (
+    <>
+      <Router>
+				<Switch>
+					<Route path='/' component={Home} exact />
+				</Switch>
+				<GlobalStyles />
+
+      </Router>
+    </>
+  );
 }
 
 export default App;
