@@ -15,6 +15,8 @@ export const GlobalStyles = createGlobalStyle`
 		--color-black: #000;
 		--color-white: #fff;
 		--color-orange: #e6a673;
+		--color-blue: #3d9bd2;
+		--color-green: #5ab688;
 
 		--first-color: #aa6d80;
 		--first-color-dark: #af4337;
@@ -78,8 +80,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: var(--color-white);
 		color: var(--color-black);
 		line-height: 1.6;
-
-		width: 100%;
+		
 		margin: 0;
 
 		@media screen and (min-width: 1024px) {
