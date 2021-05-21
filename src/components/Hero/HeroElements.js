@@ -28,11 +28,14 @@ export const HeroContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	text-align: center;
+	max-width: 1024px;
 	margin-top: -600px;
+	margin-bottom: 6rem;
 `;
 
 export const HeroContent = styled.div`
-	margin: auto;
+	margin-left: 3rem;
+	margin-right: auto;
 	padding: 2rem 1rem;
 	z-index: 10;
 `;
@@ -58,4 +61,26 @@ export const HeroBtnLink = styled(LinkR)`
 	color: var(--color-white);
 	white-space: nowrap;
 	padding: .7rem .7rem;
+`;
+
+export const BusinessContainer = styled.div`
+	max-width: 1024px;
+`;
+
+export const BusinessTitle = styled.h3`
+	text-align: center;
+`;
+
+export const BusinessWrap = styled.div`
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 2rem;
+	row-gap: 2rem;
+`;
+
+export const Img = styled.img`
+	position: relative;
+	width: 120px;
+	margin: auto;
+
 `;
