@@ -34,9 +34,9 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroContent = styled.div`
-	margin-left: 3rem;
+	margin-left: 2rem;
 	margin-right: auto;
-	padding: 2rem 1rem;
+	/* padding: 2rem 1rem; */
 	z-index: 10;
 `;
 

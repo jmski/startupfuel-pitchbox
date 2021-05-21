@@ -30,13 +30,13 @@ const HeroSection = () => {
           </HeroBtn>
         </HeroContent>
 
-        <HeroContent>
+        {/* <HeroContent>
           <HeroTitle>Insert Picture Here</HeroTitle>
           <HeroDesc>
             PS. Still working on the gradient thing.
             It's a pain in the butt
           </HeroDesc>
-        </HeroContent>
+        </HeroContent> */}
       </HeroContainer>
     </>
   )

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import NavBar  from '../components/Nav/NavBar';
 import SideBar from '../components/SideBar/SideBar';
 import { Business, Stats } from '../components/Divider/Divider';
+import Footer from '../components/Footer/Footer';
 
 import HeroSection from '../components/Hero/Hero';
 import AboutSection from '../components/About/About';
@@ -24,6 +25,7 @@ const Home = () => {
       <AboutSection />
       <Stats />
       <PitchBoxSection />
+      <Footer />
 
       
     </>

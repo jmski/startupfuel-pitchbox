@@ -12,11 +12,15 @@ export const GlobalStyles = createGlobalStyle`
 
 		/*===== Colors =====*/
 
-		--color-black: #000;
+		--color-dark-neutral: #202131;
+		--color-darker-neutral: #010304;
+		--color-light-neutral: #eaedef;
 		--color-white: #fff;
-		--color-orange: #e6a673;
-		--color-blue: #3d9bd2;
-		--color-green: #5ab688;
+		--color-yellow: #f2c029;
+		--color-blue: #3299d9;
+		--color-purple: #8c00ff;
+		--color-green: #32a955;
+		--color-red: #d90429;
 
 		--first-color: #aa6d80;
 		--first-color-dark: #af4337;
@@ -40,6 +44,7 @@ export const GlobalStyles = createGlobalStyle`
 		--normal-font-size: .938rem;
 		--small-font-size: .813rem;
 		--smaller-font-size: .75rem;
+		--smallest-font-size: .5rem;
 
 		/*===== Margenes =====*/
 		--mb-1: .5rem;
