@@ -118,16 +118,16 @@ export const NavMobileBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
 	border-radius: .5rem;
-	background-color: rgba(255, 255, 255, 0.7);
 	white-space: nowrap;
 	padding: 5px 8px;
-	color: var(--color-black);
 	font-size: var(--small-font-size);
 	outline: none;
 	border: none;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
+	color: var(--color-black);
+	background: ${({ scrollNav }) => (scrollNav ? 'var(--color-orange)' : 'rgba(255, 255, 255, 0.7)')};
 
 	&:hover {
 		transition: all 0.2s ease-in-out;

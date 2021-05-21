@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
 
 		--color-black: #000;
 		--color-white: #fff;
-
+		--color-orange: #e6a673;
 
 		--first-color: #aa6d80;
 		--first-color-dark: #af4337;
@@ -81,7 +81,6 @@ export const GlobalStyles = createGlobalStyle`
 
 		width: 100%;
 		margin: 0;
-		overflow: hidden;
 
 		@media screen and (min-width: 1024px) {
 			margin-top: var(--header-height);

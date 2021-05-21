@@ -35,7 +35,9 @@ const HeroSection = () => {
             Try our software for 14 days at no cost!
           </HeroDesc>
           <HeroBtn>
-            <HeroBtnLink>Get Started</HeroBtnLink>
+            <HeroBtnLink
+              to="/download"
+            >Get Started</HeroBtnLink>
           </HeroBtn>
         </HeroContent>
 

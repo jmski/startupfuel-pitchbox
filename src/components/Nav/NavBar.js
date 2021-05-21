@@ -24,7 +24,7 @@ const NavBar = ({ toggle }) => {
 	const [ scrollNav, setScrollNav ] = useState(false);
 
 	const changeNav = () => {
-			if(window.scrollY >= 100) {
+			if(window.scrollY >= 370) {
 					setScrollNav(true);
 			} else {
 					setScrollNav(false);
@@ -47,7 +47,7 @@ const NavBar = ({ toggle }) => {
 						<Img src={ img } />
 					</NavLogo>
 					<NavMobileBtn>
-						<NavBtnLink>Book a Free Demo</NavBtnLink>
+						<NavBtnLink scrollNav={ scrollNav }>Book a Free Demo</NavBtnLink>
 					</NavMobileBtn>
 					<BurgerIcon onClick={ toggle }>
 						<FaBars />
@@ -62,7 +62,7 @@ const NavBar = ({ toggle }) => {
 								duration={500}
 								spy={true}
 								exact="true"
-								offset={0}
+								offset={-80}
 							>
 								Home
 							</NavLink>
@@ -97,7 +97,7 @@ const NavBar = ({ toggle }) => {
 
 					</NavMenu>
 					<NavBtn>
-						<NavBtnLink>Book a Free Demo</NavBtnLink>
+						<NavBtnLink scrollNav={ scrollNav }>Book a Free Demo</NavBtnLink>
 					</NavBtn>
 
 				</NavContainer>
