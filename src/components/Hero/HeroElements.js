@@ -1,47 +1,61 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+
+export const HeroBanner = styled.div`
+	top: calc(-1 * var(--header-height));
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	background: linear-gradient(-60deg, #8895da, #ce87eb, #e9e1a5, #9af0b3, #f8b19b, #9bd5eb, #f19cbd);
+	background-size: 500% 500%;
+	animation: gradient 30s ease infinite;
+	background-repeat: no-repeat;
+	mask-image: -webkit-gradient(linear, right top, right bottom, 
+			color-stop(0.00,  rgba(0,0,0,1)),
+			color-stop(0.35,  rgba(0,0,0,1)),
+			color-stop(0.60,  rgba(0,0,0,0)),
+			color-stop(1.00,  rgba(0,0,0,0)));
+		
+	@keyframes gradient {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+	}
+`;
 
 export const HeroContainer = styled.div`
-  top: calc(-1 * var(--header-height));
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-color: var(--color-black);
-  text-align: center;
-  background: linear-gradient(-45deg, #f8b19b, #9bd5eb, #f19cbd);
-  background-size: 300% 300%;
-  animation: gradient 5s ease infinite;
-  background-repeat: no-repeat;
-  mask-image: -webkit-gradient(linear, right top, right bottom, 
-      color-stop(0.00,  rgba(0,0,0,1)),
-      color-stop(0.35,  rgba(0,0,0,1)),
-      /* color-stop(0.50,  rgba(0,0,0,0)),
-      color-stop(0.65,  rgba(0,0,0,0)), */
-      color-stop(1.00,  rgba(0,0,0,0)));
-}
-    
-  @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
+	margin-top: -600px;
 `;
 
 export const HeroContent = styled.div`
-margin: auto;
-padding: 2rem 1rem;
+	margin: auto;
+	padding: 2rem 1rem;
+	z-index: 10;
 `;
 
 export const HeroTitle = styled.h1`
-
+	text-align: left;
+	z-index: 10;
 `;
 
-export const HeroDesc = styled.span`
-
+export const HeroDesc = styled.p`
+	text-align:left;
 
 `;
 
 export const HeroBtn = styled.div`
+	margin-top: 1rem;
+	position: absolute;
+`;
 
+export const HeroBtnLink = styled(LinkR)`
+	border-radius: .5rem;
+	background: var(--color-black);
+	color: var(--color-white);
+	white-space: nowrap;
+	padding: .7rem .7rem;
 `;

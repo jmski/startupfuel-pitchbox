@@ -76,8 +76,12 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: var(--normal-font-size);
 		font-weight: var(--font-medium);
 		background-color: var(--color-white);
-		color: var(--text-color);
+		color: var(--color-black);
 		line-height: 1.6;
+
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
 
 		@media screen and (min-width: 1024px) {
 			margin-top: var(--header-height);

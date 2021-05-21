@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   HeroContainer,
+  HeroBanner,
   HeroContent,
   HeroTitle,
   HeroDesc,
   HeroBtn,
+  HeroBtnLink,
 
 
 } from './HeroElements';
@@ -12,15 +14,20 @@ import {
 const HeroSection = () => {
   return (
     <>
-      <HeroContainer id="home">
-        <HeroContent>
+      <HeroBanner/>
+        <HeroContainer id="home">
+          <HeroContent>
             <HeroTitle>Dealflow Management for Startup Investors</HeroTitle>
             <HeroDesc>
               Helping you discover and access diverse startups all
               while collecting, reviewing and tracking startup dealflow.
-
+            <br/>
+            <br/>
               Try our software for 14 days at no cost!
             </HeroDesc>
+            <HeroBtn>
+            <HeroBtnLink>Get Started</HeroBtnLink>
+          </HeroBtn>
         </HeroContent>
         <HeroContent>
           <HeroTitle>Insert Picture Here</HeroTitle>
@@ -28,11 +35,9 @@ const HeroSection = () => {
             PS. Still working on the gradient thing.
             It's a pain in the butt
           </HeroDesc>
-          <HeroBtn>
-            Get Started
-          </HeroBtn>
         </HeroContent>
-      </HeroContainer>
+
+        </HeroContainer>
     </>
   )
 }
