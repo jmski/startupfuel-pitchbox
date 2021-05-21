@@ -5,6 +5,11 @@ import {
   BusinessWrap,
   Img,
 
+  StatsContainer,
+  StatsItem,
+  StatsTitle,
+  StatsSubtitle,
+
 } from './DividerElements';
 
 
@@ -35,7 +40,29 @@ export const Business = () => {
 export const Stats = () => {
   return(
     <>
+      <StatsContainer>
 
+        <StatsItem>
+          <StatsTitle>250+</StatsTitle>
+          <StatsSubtitle>Funds/ Syndicates</StatsSubtitle>
+        </StatsItem>
+
+        <StatsItem>
+          <StatsTitle>$300M+</StatsTitle>
+          <StatsSubtitle>Assets Under Management</StatsSubtitle>
+        </StatsItem>
+
+        <StatsItem>
+          <StatsTitle>2000+</StatsTitle>
+          <StatsSubtitle>Startups</StatsSubtitle>
+        </StatsItem>
+
+        <StatsItem>
+          <StatsTitle>~10%</StatsTitle>
+          <StatsSubtitle>User Growth per Month</StatsSubtitle>
+        </StatsItem>
+
+      </StatsContainer>
     </>
   )
 }

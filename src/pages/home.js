@@ -7,6 +7,7 @@ import { Business, Stats } from '../components/Divider/Divider';
 
 import HeroSection from '../components/Hero/Hero';
 import AboutSection from '../components/About/About';
+import PitchBoxSection from '../components/PitchBox/PitchBox';
 
 const Home = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
       <Business />
       <AboutSection />
       <Stats />
+      <PitchBoxSection />
 
       
     </>
