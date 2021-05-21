@@ -4,6 +4,8 @@ import {
   HeroContent,
   HeroTitle,
   HeroDesc,
+  HeroBtn,
+
 
 } from './HeroElements';
 
@@ -26,6 +28,9 @@ const HeroSection = () => {
             PS. Still working on the gradient thing.
             It's a pain in the butt
           </HeroDesc>
+          <HeroBtn>
+            Get Started
+          </HeroBtn>
         </HeroContent>
       </HeroContainer>
     </>
