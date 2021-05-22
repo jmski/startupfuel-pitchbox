@@ -8,6 +8,7 @@ export const PbContainer = styled.div`
 
 export const Bg = styled.img`
   position: absolute;
+  left: 0; 
   z-index: -1;
 `;
 

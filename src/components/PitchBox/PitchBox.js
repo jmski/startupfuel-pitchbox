@@ -16,7 +16,6 @@ const PitchBoxSection = () => {
   return (
     <>
       <PbContainer id="contact">
-        
         <Bg src={bg}/>
         <PbTitle>Let's find your next fund</PbTitle>
         <PbDesc>
