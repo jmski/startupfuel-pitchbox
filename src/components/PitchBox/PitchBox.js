@@ -13,7 +13,7 @@ import {
 const PitchBoxSection = () => {
   return (
     <>
-      <PbContainer>
+      <PbContainer id="contact">
         <PbTitle>Let's find your next fund</PbTitle>
         <PbDesc>
           Simplifying scouring and due diligence for 

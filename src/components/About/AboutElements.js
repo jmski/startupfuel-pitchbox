@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { Link as LinkR} from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 
 export const AboutContainer = styled.div`
-  display: block;
+  display: grid;
   max-width: 1024px;
   margin-bottom: var(--mb-4);
+
 
   @media screen and (min-width: 768px) {
     display: grid;
@@ -14,12 +15,19 @@ export const AboutContainer = styled.div`
 
 export const AboutInfo = styled.div`
 position: relative;
-margin-left: 2rem;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: var(--mb-4);
+text-align: center;
+padding: 2rem;
+
+@media screen and (min-width: 768px) {
+  text-align: left;
+}
 `;
 
 export const AboutTitle = styled.h1`
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 `;
 
 export const AboutSubtitle = styled.h3`
@@ -28,7 +36,6 @@ export const AboutSubtitle = styled.h3`
 `;
 
 export const AboutDesc = styled.p`
-  max-width:370px;
   margin-bottom: var(--mb-4);
   font-size: var(--smaller-font-size);
 `;
@@ -45,49 +52,76 @@ export const AboutBtnLink = styled(LinkR)`
 `;
 
 export const CardsContainer = styled.div`
-  display: grid;
+	max-width: 1024px;
+	display: grid;
+  grid-template-columns: repeat(, 1fr);
+	width: calc(100% - 2rem);
   column-gap: 1rem;
   row-gap: 1rem;
-  grid-template-columns: 100%;
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
 
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    margin-right: 1rem;
-  }
+	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+;`
 
-  /* @media screen and (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-  } */
-`;
-
-export const CardsItem = styled.div`
-  padding: 1rem;
-  width: calc(100%- 2rem);
-  background: var(--color-white);
-  border: 2px solid;
+export const CardContent = styled.div`
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--color-dark-neutral);
   border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
   text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
   }
 `;
 
-export const CardsTitle = styled.h3`
-  font-size: var(--small-font-size);
+export const CardTitle = styled.h3`
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
-export const CardsDesc = styled.p`
+export const CardOverlay = styled.div`
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  top: -200;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+
+  ${CardContent}:hover & {
+    top: 0;
+    transition: 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.9);
+  }
+`;
+
+export const CardTitleOverlay = styled.h3`
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2);
+`;
+
+export const CardDesc = styled.p`
   font-size: var(--smaller-font-size);
 `;
 
 export const Img = styled.img`
-  width: 50%;
-  height: auto;
+  display: absolute;
+  top: 0;
+  height: 200px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  
 `;

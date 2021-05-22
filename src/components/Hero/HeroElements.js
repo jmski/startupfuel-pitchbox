@@ -57,8 +57,12 @@ export const HeroBtn = styled.div`
 
 export const HeroBtnLink = styled(LinkR)`
 	border-radius: .5rem;
-	background: var(--color-black);
+	background: var(--color-dark-neutral);
 	color: var(--color-white);
 	white-space: nowrap;
 	padding: .7rem .7rem;
+
+	&:hover {
+		background: var(--color-purple);
+	}
 `;

@@ -6,7 +6,7 @@ export const Header = styled.nav`
 	max-width: 1024px;;
 	top: 0;
 	display: flex;
-	background: ${({ scrollNav }) => (scrollNav ? 'var(--color-white)' : 'transparent')};
+	background: ${({ scrollnav }) => (scrollnav ? 'var(--color-white)' : 'transparent')};
 	height: var(--header-height);
 	margin-top: calc(-1 * var(--header-height));
 	justify-content: center;
@@ -76,7 +76,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkS)`
-	color: var(--color-black);
+	color: var(--color-dark-neutral);
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -87,11 +87,11 @@ export const NavLink = styled(LinkS)`
 	cursor: pointer;
 
 	&:hover {
-		border-bottom: 3px solid var(--color-black);
+		border-bottom: 3px solid var(--color-dark-neutral);
 	}
 
 	&.active {
-		border-bottom: 3px solid var(--color-black);
+		border-bottom: 3px solid var(--color-dark-neutral);
 	}
 `;
 
@@ -126,12 +126,12 @@ export const NavBtnLink = styled(LinkR)`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	color: var(--color-black);
-	background: ${({ scrollNav }) => (scrollNav ? 'var(--color-orange)' : 'rgba(255, 255, 255, 0.7)')};
+	color: ${({ scrollnav }) => (scrollnav ? 'var(--color-white)' : 'var(--color-dark-neutral)')};
+	background: ${({ scrollnav }) => (scrollnav ? 'var(--color-dark-neutral)' : 'rgba(255, 255, 255, 0.7)')};
 
 	&:hover {
 		transition: all 0.2s ease-in-out;
-		background: #fff;
-		color: #202131;
+		background: ${({ scrollnav }) => (scrollnav ? 'var(--color-light-neutral)' : 'var(--color-dark-neutral)')};
+		color: ${({ scrollnav }) => (scrollnav ? 'var(--color-dar-neutral)' : 'var(--color-light-neutral)')};
 	}
 `;

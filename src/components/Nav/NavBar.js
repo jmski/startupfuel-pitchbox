@@ -8,9 +8,9 @@ import {
 	Img,
 	NavMobileBtn,
 	BurgerIcon,
-	NavMenu,
-	NavItem,
-	NavLink,
+	// NavMenu,
+	// NavItem,
+	// NavLink,
 	NavBtn,
 	NavBtnLink,
 
@@ -21,13 +21,13 @@ import { FaBars } from 'react-icons/fa';
 
 const NavBar = ({ toggle }) => {
 
-	const [ scrollNav, setScrollNav ] = useState(false);
+	const [ scrollnav, setScrollnav ] = useState(false);
 
 	const changeNav = () => {
 			if(window.scrollY >= 370) {
-					setScrollNav(true);
+					setScrollnav(true);
 			} else {
-					setScrollNav(false);
+					setScrollnav(false);
 			}
 	}
 	useEffect(() => {
@@ -41,19 +41,19 @@ const NavBar = ({ toggle }) => {
 
 	return (
 		<>
-			<Header scrollNav={ scrollNav }>
+			<Header scrollnav={ scrollnav }>
 				<NavContainer>
 					<NavLogo to='/' onClick={ toggleHome }>
 						<Img src={ img } />
 					</NavLogo>
 					<NavMobileBtn>
-						<NavBtnLink scrollNav={ scrollNav }>Book a Free Demo</NavBtnLink>
+						<NavBtnLink scrollnav={ scrollnav }>Book Free Demo</NavBtnLink>
 					</NavMobileBtn>
 					<BurgerIcon onClick={ toggle }>
 						<FaBars />
 					</BurgerIcon>
 
-					<NavMenu>
+					{/* <NavMenu>
 
 						<NavItem>
 							<NavLink
@@ -94,10 +94,10 @@ const NavBar = ({ toggle }) => {
 							</NavLink>
 						</NavItem>
 
+					</NavMenu> */}
 
-					</NavMenu>
 					<NavBtn>
-						<NavBtnLink scrollNav={ scrollNav }>Book a Free Demo</NavBtnLink>
+						<NavBtnLink scrollnav={ scrollnav }>Book Free Demo</NavBtnLink>
 					</NavBtn>
 
 				</NavContainer>

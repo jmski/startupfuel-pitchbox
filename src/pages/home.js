@@ -27,9 +27,8 @@ const Home = () => {
       <PitchBoxSection />
       <Footer />
 
-      
     </>
-  )
-}
+  );
+};
 
 export default Home;

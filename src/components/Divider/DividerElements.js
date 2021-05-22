@@ -3,17 +3,18 @@ import styled from 'styled-components';
 export const BusinessContainer = styled.div`
   max-width: 1024px;
   margin-bottom: var(--mb-5);
+  padding: 0 2rem;
 `;
 
 export const BusinessTitle = styled.h3`
   text-align: center;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-1);
 `;
 
 export const BusinessWrap = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: .5rem;
   row-gap: 2rem;
 `;
 

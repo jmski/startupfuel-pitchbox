@@ -7,7 +7,7 @@ export const SideBarContainer = styled.div`
   right: 0;
   position: fixed;
   z-index: 999;
-  width: 45%;
+  width: 40%;
   height: 100vh;
   background: var(--color-white);
   display: grid;
@@ -40,12 +40,12 @@ export const SideBarItem = styled.li`
 export const SideBarLink = styled(LinkS)`
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   color: var(--color-black);
   cursor: pointer;
 
   &:hover {
-    background: var(--first-color);
+    background: var(--color-light-neutral);
   }
 
 `;
@@ -56,20 +56,20 @@ margin-right: auto;
 `;
 
 export const SideLinkBtn = styled(LinkR)`
+  display: flex;
   border-radius: .5rem;
-  background: var(--color-black);
+  background: var(--color-dark-neutral);
   white-space: nowrap;
-  padding: 10px 10px;
+  padding: .5rem .5rem;
   color: #fff;
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
   outline: none;
-  border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   &:hover {
       transition: all 0.2s ease-in-ease-out;
-      background: var(--color-white);
-      color: var(--color-black);
+      background: var(--color-light-neutral);
+      color: var(--color-dark-neutral);
     }
 `;

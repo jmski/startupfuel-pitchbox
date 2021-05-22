@@ -30,7 +30,6 @@ export const Business = () => {
          <Img src={ img2 }/>
          <Img src={ img3 }/>
          <Img src={ img4 }/>
-         <Img src={ img1 }/>
         </BusinessWrap>
       </BusinessContainer>
     </>

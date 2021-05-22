@@ -3,7 +3,7 @@ import { GlobalStyles } from './components/GlobalStyles';
 
 import Home from './pages/home';
 
-function App() {
+const App = () => {
   return (
     <>
       <Router>

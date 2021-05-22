@@ -8,9 +8,11 @@ import {
   AboutBtn,
   AboutBtnLink,
   CardsContainer,
-  CardsItem,
-  CardsTitle,
-  CardsDesc,
+  CardContent,
+  CardOverlay,
+  CardTitle,
+  CardTitleOverlay,
+  CardDesc,
   Img,
 } from './AboutElements';
 
@@ -45,48 +47,84 @@ const AboutSection = () => {
         </AboutInfo>
 
         <CardsContainer>
-          <CardsItem>
+          <CardContent>
             <Img src={ img1 }/>
-            <CardsTitle>Filter Startups</CardsTitle>
-            <CardsDesc>
-              Save time by filtering out deals that don't fit your thesis.
-            </CardsDesc>
-          </CardsItem>
+            <CardTitle>
+              Filter Startups
+            </CardTitle>
+            <CardOverlay>
+              <CardTitleOverlay>
+                Filter Startups
+              </CardTitleOverlay>
+              <CardDesc>
+                Save time by filtering out deals that don't fit your thesis.
+              </CardDesc>
+            </CardOverlay>
+          </CardContent>
 
-          <CardsItem>
+          <CardContent>
             <Img src={ img2 }/>
-            <CardsTitle>Team Collaboration</CardsTitle>
-            <CardsDesc>
-              Internal & external team members to assist in virtual due diligence.
-            </CardsDesc>
-          </CardsItem>
+            <CardTitle>
+              Team Collaboration
+            </CardTitle>
+            <CardOverlay>
+              <CardTitleOverlay>
+                Team Collaboration
+              </CardTitleOverlay>
+              <CardDesc>
+                Internal & external team members to assist in virtual due diligence.
+              </CardDesc> 
+            </CardOverlay>
+          </CardContent>
 
-          <CardsItem>
+          <CardContent>
             <Img src={ img3 }/>
-            <CardsTitle>Customizable Settings</CardsTitle>
-            <CardsDesc>
-              Feature rich settings to control intake forms,
-              review criteria, managing teams and automating
-              communication.
-            </CardsDesc>
-          </CardsItem>
+            <CardTitle>
+              Customizable Settings
+            </CardTitle>
+            <CardOverlay>
+              <CardTitleOverlay>
+                Customizable Settings
+              </CardTitleOverlay>
+              <CardDesc>
+                Feature rich settings to control intake forms,
+                review criteria, managing teams and automating
+                communication.
+              </CardDesc>
+            </CardOverlay>
+          </CardContent>
+          
 
-          <CardsItem>
+          <CardContent>
             <Img src={ img4 }/>
-            <CardsTitle>Review Companies</CardsTitle>
-            <CardsDesc>
-              A state of the art review system to shortlist the
-              best deals for your fund.
-            </CardsDesc>
-          </CardsItem>
+            <CardTitle>
+                Review Companies
+            </CardTitle>
+            <CardOverlay>
+              <CardTitleOverlay>
+                Review Companies
+              </CardTitleOverlay>
+              <CardDesc>
+                A state of the art review system to shortlist the
+                best deals for your fund.
+            </CardDesc>
+            </CardOverlay>
+          </CardContent>
 
-          <CardsItem>
+          <CardContent>
             <Img src={ img5 }/>
-            <CardsTitle>Targeted Marketing</CardsTitle>
-            <CardsDesc>
-              Promote your fund to specific startups based on your thesis.
-            </CardsDesc>
-          </CardsItem>
+            <CardTitle>
+              Targeted Marketing
+            </CardTitle>
+            <CardOverlay>
+              <CardTitleOverlay>
+                Targeted Marketing
+              </CardTitleOverlay>
+              <CardDesc>
+                Promote your fund to specific startups based on your thesis.
+              </CardDesc>
+            </CardOverlay>
+          </CardContent>
 
         </CardsContainer>
 

@@ -15,6 +15,7 @@ import {
 import { FaTimes } from 'react-icons/fa';
 
 const SideBar = ({ isOpen, toggle }) => {
+
   return (
     <>
       <SideBarContainer isOpen={ isOpen } onClick={ toggle }>
@@ -27,7 +28,8 @@ const SideBar = ({ isOpen, toggle }) => {
           <SideBarItem>
             <SideBarLink
               to="home"
-              onClick={ toggle}
+              offset={-100}
+              onClick={ toggle }
             >
               Home
             </SideBarLink>
@@ -35,8 +37,8 @@ const SideBar = ({ isOpen, toggle }) => {
 
           <SideBarItem>
             <SideBarLink
-              to="About"
-              onClick={ toggle}
+              to="about"
+              onClick={ toggle }
             >
               About
             </SideBarLink>
@@ -44,18 +46,17 @@ const SideBar = ({ isOpen, toggle }) => {
 
           <SideBarItem>
             <SideBarLink
-              to="Contact"
-              onClick={ toggle}
+              to="contact"
+              onClick={ toggle }
             >
               Contact
             </SideBarLink>
           </SideBarItem>
 
-
-        </SideBarMenu>
-        <SideBtn>
-          <SideLinkBtn>Book a Free Demo</SideLinkBtn>
+          <SideBtn>
+          <SideLinkBtn>Book Free Demo</SideLinkBtn>
         </SideBtn>
+        </SideBarMenu>
 
       </SideBarContainer>
     </>
