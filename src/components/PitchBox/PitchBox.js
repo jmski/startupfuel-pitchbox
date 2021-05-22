@@ -1,6 +1,7 @@
 import React from 'react';
 import { 
   PbContainer,
+  Bg,
   PbTitle,
   PbDesc,
   PbBtn,
@@ -9,11 +10,14 @@ import {
 
 
 } from './PitchBoxElements';
+import bg from '../../img/blob.png';
 
 const PitchBoxSection = () => {
   return (
     <>
       <PbContainer id="contact">
+        
+        <Bg src={bg}/>
         <PbTitle>Let's find your next fund</PbTitle>
         <PbDesc>
           Simplifying scouring and due diligence for 

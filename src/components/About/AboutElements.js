@@ -13,6 +13,10 @@ export const AboutContainer = styled.div`
   }
 `;
 
+export const Bg = styled.img`
+ position: absolute;
+`;
+
 export const AboutInfo = styled.div`
 position: relative;
 margin-left: auto;

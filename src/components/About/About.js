@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AboutContainer,
+  Bg,
   AboutInfo,
   AboutTitle,
   AboutSubtitle,
@@ -15,7 +16,7 @@ import {
   CardDesc,
   Img,
 } from './AboutElements';
-
+import bg from '../../img/blob.png';
 import img1 from '../../img/svg/undraw_filter.svg';
 import img2 from '../../img/svg/undraw_team.svg';
 import img3 from '../../img/svg/undraw_personal.svg';
@@ -26,7 +27,7 @@ const AboutSection = () => {
   return (
     <>
       <AboutContainer id="about">
-
+        <Bg src={bg}/>
         <AboutInfo>
           <AboutSubtitle>Powered by Startup Fuel</AboutSubtitle>
           <AboutTitle>What is the PitchBox?</AboutTitle>

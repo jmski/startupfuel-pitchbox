@@ -6,6 +6,11 @@ export const PbContainer = styled.div`
   margin-bottom: var(--mb-4);
 `; 
 
+export const Bg = styled.img`
+  position: absolute;
+  z-index: -1;
+`;
+
 export const PbTitle = styled.h1`
   font-weight: var(--normal-font);
 `;
