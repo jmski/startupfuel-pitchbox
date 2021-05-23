@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   FooterContainer,
   Wrapper,
@@ -6,9 +7,11 @@ import {
   LogoImg,
   FooterCopy,
   Title,
-  Subtitle,
   Link,
   PodcastContainer,
+  PodTitle,
+  SocialWrapper,
+  SocialLink,
 
 } from './FooterElements';
 import { FaTwitter, FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
@@ -17,12 +20,16 @@ import { GiOfficeChair } from 'react-icons/gi';
 import img1 from '../../img/watermark-light.png';
 
 
-const Footer = () => {
+const toggleHome = () => scroll.scrollToTop();
+
+const Footer = ( toggle ) => {
   return (
     <>
       <FooterContainer>
         <Wrapper>
-          <FooterLogo>
+          <FooterLogo
+            onClick ={ toggleHome }
+          >
             <LogoImg src={ img1 }/>
           </FooterLogo>
           <FooterCopy>© Copyright 2021 StartupFuel Inc.</FooterCopy>
@@ -31,39 +38,63 @@ const Footer = () => {
 
         <Wrapper>
           <Title>About</Title>
-          <Link>About StartupFuel</Link>
-          <Link>Terms of Use</Link>
-          <Link>Privacy Policy</Link>
+          <Link
+            to="about"
+          >
+            About StartupFuel
+          </Link>
+          <Link
+            to="home"
+          >
+            Terms of Use
+          </Link>
+          <Link
+            to="about"
+          >
+            Privacy Policy
+          </Link>
         </Wrapper>
 
 
         <Wrapper>
           <Title>Listen to our podcast on Spotify</Title>
             <PodcastContainer>
-              <Subtitle>
+              <PodTitle>
                 Startup Legends
-              </Subtitle>      
+              </PodTitle>      
               <GiOfficeChair />      
             </PodcastContainer>
         </Wrapper>
 
-        <Wrapper>
-          <Link>
+        <SocialWrapper>
+          <SocialLink
+            href="https://twitter.com/startupfuel/"
+            target="_blank"
+          >
             <FaTwitter />
-          </Link>
+          </SocialLink>
 
-          <Link>
+          <SocialLink
+            href="https://www.instagram.com/startupfueltv/?hl=en/"
+            target="_blank"
+          >
             <FaInstagram />
-          </Link>
+          </SocialLink>
 
-          <Link>
+          <SocialLink
+            href="https://www.facebook.com/FuelYourStartup/"
+            target="_blank"
+          >
             <FaFacebookSquare />
-          </Link>
+          </SocialLink>
 
-          <Link>
+          <SocialLink
+            href="https://www.linkedin.com/company/startupfuelapp/?originalSubdomain=ca"
+            target="_blank"
+          >
             <FaLinkedin />
-          </Link>
-        </Wrapper>
+          </SocialLink>
+        </SocialWrapper>
 
       </FooterContainer>
     </>

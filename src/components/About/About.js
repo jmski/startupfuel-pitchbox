@@ -9,7 +9,12 @@ import {
   AboutBtn,
   AboutBtnLink,
   CardsContainer,
-  CardContent,
+  // CardContent,
+  CardOne,
+  CardTwo,
+  CardThree,
+  CardFour,
+  CardFive,
   CardOverlay,
   CardTitle,
   CardTitleOverlay,
@@ -47,8 +52,12 @@ const AboutSection = () => {
           </AboutBtn>
         </AboutInfo>
 
+
+
+
+
         <CardsContainer>
-          <CardContent>
+          <CardOne>
             <Img src={ img1 }/>
             <CardTitle>
               Filter Startups
@@ -61,9 +70,9 @@ const AboutSection = () => {
                 Save time by filtering out deals that don't fit your thesis.
               </CardDesc>
             </CardOverlay>
-          </CardContent>
+          </CardOne>
 
-          <CardContent>
+          <CardTwo>
             <Img src={ img2 }/>
             <CardTitle>
               Team Collaboration
@@ -76,9 +85,9 @@ const AboutSection = () => {
                 Internal & external team members to assist in virtual due diligence.
               </CardDesc> 
             </CardOverlay>
-          </CardContent>
+          </CardTwo>
 
-          <CardContent>
+          <CardThree>
             <Img src={ img3 }/>
             <CardTitle>
               Customizable Settings
@@ -93,10 +102,10 @@ const AboutSection = () => {
                 communication.
               </CardDesc>
             </CardOverlay>
-          </CardContent>
+          </CardThree>
           
 
-          <CardContent>
+          <CardFour>
             <Img src={ img4 }/>
             <CardTitle>
                 Review Companies
@@ -110,9 +119,9 @@ const AboutSection = () => {
                 best deals for your fund.
             </CardDesc>
             </CardOverlay>
-          </CardContent>
+          </CardFour>
 
-          <CardContent>
+          <CardFive>
             <Img src={ img5 }/>
             <CardTitle>
               Targeted Marketing
@@ -125,7 +134,7 @@ const AboutSection = () => {
                 Promote your fund to specific startups based on your thesis.
               </CardDesc>
             </CardOverlay>
-          </CardContent>
+          </CardFive>
 
         </CardsContainer>
 

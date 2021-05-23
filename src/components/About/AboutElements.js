@@ -14,7 +14,13 @@ export const AboutContainer = styled.div`
 `;
 
 export const Bg = styled.img`
- position: absolute;
+  position: absolute;
+  display: none;
+  opacity: 50%;
+
+ @media screen and (min-width: 768px) {
+   display: block;
+ }
 `;
 
 export const AboutInfo = styled.div`
@@ -73,14 +79,34 @@ export const CardsContainer = styled.div`
 export const CardContent = styled.div`
   overflow: hidden;
   position: relative;
-  border: 2px solid var(--color-dark-neutral);
   border-radius: 1rem;
   transition: all 0.5s ease-in-out;
   text-align: center;
+  background: var(--color-white);
 
   @media screen and (min-width: 768px) {
     height: auto;
   }
+`;
+
+export const CardOne = styled(CardContent)`
+  border: 2px solid var(--color-purple);
+`;
+
+export const CardTwo = styled(CardContent)`
+  border: 2px solid var(--color-blue);
+`;
+
+export const CardThree = styled(CardContent)`
+  border: 2px solid var(--color-yellow);
+`;
+
+export const CardFour = styled(CardContent)`
+  border: 2px solid var(--color-red);
+`;
+
+export const CardFive = styled(CardContent)`
+  border: 2px solid var(--color-green);
 `;
 
 export const CardTitle = styled.h3`

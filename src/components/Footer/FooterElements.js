@@ -1,27 +1,37 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding: 20px 20px;
   background: var(--color-dark-neutral);
-  width: 100%;
-  height: 15rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
 
 `;
 
 export const Wrapper = styled.div`
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
   text-align: left;
-  width: calc(100% - 2rem);
+  max-width: 1024px;
   column-gap: 1rem;
   row-gap: .1rem;
 `;
 
-export const FooterLogo = styled.div`
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+`;
+
+export const FooterLogo = styled.a`
+  position: relative;
+  margin-bottom: 5rem;
+  cursor: pointer;
 
 `;
 
@@ -30,7 +40,7 @@ export const LogoImg = styled.img`
 `;
 
 export const FooterCopy = styled.span`
-  color: var(--color-white);
+  color: var(--color-light-neutral);
   font-size: var(--smallest-font-size);
 `;
 
@@ -40,24 +50,36 @@ export const Title = styled.span`
   color: var(--color-white);
 `;
 
-export const Subtitle = styled.span`
-  font-size: var(--smallest-font-size);
-  font-weight: var(--font-semi-bold);
-`;
-
-export const Link = styled(LinkR)`
-  color: var(--color-white);
-  font-size: var(--small-font-size);
+export const Link = styled.a`
+  color: var(--color-light-neutral);
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-1);
+  cursor: pointer;
 `;
 
 export const PodcastContainer = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  border-radius: .5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
   background: var(--color-darker-neutral);
   color: var(--color-white);
-  display: grid;
+  cursor: pointer;
+`;
+
+export const PodTitle = styled.span`
+  font-size: var(--smallest-font-size);
+  font-weight: var(--font-semi-bold);
+`;
+
+export const SocialWrapper = styled(Wrapper)`
+  flex-direction: row;
+`;
+
+
+export const SocialLink = styled(Link)`
+  font-size: var(--normal-font-size);
+  color: var(--color-white);
 `;

@@ -10,6 +10,15 @@ export const Bg = styled.img`
   position: absolute;
   left: 0; 
   z-index: -1;
+  display: none;
+  transform: scaleX(-1);
+  transform: scaleY(-1);
+  overflow: hidden;
+  opacity: 50%;
+
+ @media screen and (min-width: 768px) {
+   display: block;
+ }
 `;
 
 export const PbTitle = styled.h1`
