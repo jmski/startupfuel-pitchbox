@@ -41,11 +41,12 @@ export const StatsItem = styled.div`
 
 export const StatsTitle = styled.h1`
   font-weight: var(--font-bold);
+  font-size: 50px;
 `;
 
 export const StatsSubtitle = styled.span`
 display: block;
   font-weight: var(--font-medium);
-  font-size: var(--small-font-size);
+  font-size: 20px;
   margin-top: -.5rem;
 `;

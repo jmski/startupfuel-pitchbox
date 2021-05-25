@@ -34,7 +34,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroContent = styled.div`
-	margin-left: 2rem;
+	margin-left: 5rem;
 	margin-right: auto;
 	/* padding: 2rem 1rem; */
 	z-index: 10;
@@ -43,10 +43,13 @@ export const HeroContent = styled.div`
 export const HeroTitle = styled.h1`
 	text-align: left;
 	z-index: 10;
+	margin-bottom: var(--mb-2);
+	font-weight: normal;
 `;
 
 export const HeroDesc = styled.p`
 	text-align:left;
+	margin-bottom: var(--mb-2);
 
 `;
 
@@ -60,9 +63,10 @@ export const HeroBtnLink = styled(LinkR)`
 	background: var(--color-dark-neutral);
 	color: var(--color-white);
 	white-space: nowrap;
-	padding: .7rem .7rem;
+	padding: .8rem 1rem;
+	font-weight: normal;
 
 	&:hover {
-		background: var(--color-purple);
+		background: var(--color-darker-neutral);
 	}
 `;

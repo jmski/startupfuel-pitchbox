@@ -66,6 +66,11 @@ export const AboutBtnLink = styled(LinkR)`
   color: var(--color-white);
   padding: 1rem 1rem;
   border-radius: .5rem;
+  font-weight: normal;
+
+  &:hover {
+    background: #2777a7;
+  }
 `;
 
 export const CardsContainer = styled.div`

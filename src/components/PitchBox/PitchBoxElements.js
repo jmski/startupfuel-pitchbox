@@ -38,12 +38,22 @@ export const PbBtnLink = styled(LinkR)`
   background: var(--color-purple);
   color: var(--color-white);
   border-radius: .5rem;
-  padding: .5rem .6rem;
+  padding: 1rem 1rem;
+  font-weight: normal;
+
+  &:hover {
+    background: #59019f;
+  }
 `;
 
 export const FundBtnLink = styled(LinkR)`
   background: var(--color-red);
   color: var(--color-white);
   border-radius: .5rem;
-  padding: .5rem .6rem;
+  padding: 1rem 1rem;
+  font-weight: normal;
+
+  &:hover {
+    background: #96031b;
+  }
 `;
