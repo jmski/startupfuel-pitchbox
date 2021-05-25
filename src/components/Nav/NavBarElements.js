@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Header = styled.nav`
-	max-width: 1024px;;
+	/* max-width: 1024px;; */
 	top: 0;
 	display: flex;
 	background: ${({ scrollnav }) => (scrollnav ? 'var(--color-white)' : 'transparent')};

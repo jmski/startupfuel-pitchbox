@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
   padding: 20px 20px;
   column-gap: 1rem;
   row-gap: 1rem;
-  max-width: 1024px;
+  /* max-width: 1024px; */
 
 `;
 
@@ -41,6 +41,7 @@ export const FooterLogo = styled.a`
 
 export const LogoImg = styled.img`
   width: 100%;
+  max-width: 200px;
 `;
 
 export const FooterCopy = styled.span`

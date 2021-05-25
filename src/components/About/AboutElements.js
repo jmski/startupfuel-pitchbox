@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const AboutContainer = styled.div`
   display: grid;
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin-bottom: var(--mb-4);
 
 
@@ -14,12 +14,19 @@ export const AboutContainer = styled.div`
 `;
 
 export const Bg = styled.img`
+  width: 100%;
   position: absolute;
   display: none;
-  opacity: 50%;
+  opacity: 30%;
+  z-index: -1;
 
- @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+   top: 600px;
+ }
+
+ @media screen and (min-width: 1024px) {
    display: block;
+   top: 400px;
  }
 `;
 
@@ -66,14 +73,18 @@ export const CardsContainer = styled.div`
 	display: grid;
   grid-template-columns: repeat(, 1fr);
 	width: calc(100% - 2rem);
-  column-gap: 1rem;
-  row-gap: 1rem;
+  column-row: -2rem;
+  grid-row: -2rem;
 	margin-left: var(--mb-2);
 	margin-right: var(--mb-2);
 
 	@media screen and (min-width: 768px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 ;`
 
 export const CardContent = styled.div`

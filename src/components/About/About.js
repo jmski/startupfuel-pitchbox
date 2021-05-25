@@ -37,18 +37,17 @@ const AboutSection = () => {
           <AboutSubtitle>Powered by Startup Fuel</AboutSubtitle>
           <AboutTitle>What is the PitchBox?</AboutTitle>
           <AboutDesc>
-            PitchBox is a deal flow management software built specifically
-            for startup investors and funds globally. Using our easy to use
-            solution, firms can <b>run intake, collaborate </b>&<b> review startup
-            pitches all in one place.</b> We simplify the process for startup
-            forunders to apply to your PitchBox, while ensuring that analysts
-            can be equally efficient with managing and reviewing
-            applications, truly a win-win for both sides.
+            PitchBox helps startup investors find innovative and impactful
+            investment opportunities. It also helps manage their deal flow
+            by organizing all of your startup pitches in one place. Our solution
+            provides your analysts with all the necessary information in one
+            easy-to-navigate dashboard. Now, your team can review all types of pitches
+            and make informed decisions based on the data available.
           </AboutDesc>
           <AboutBtn>
             <AboutBtnLink
               to="/download"
-            >Book a Free Demo</AboutBtnLink>
+            >Book Your Free Demo</AboutBtnLink>
           </AboutBtn>
         </AboutInfo>
 
@@ -82,7 +81,7 @@ const AboutSection = () => {
                 Team Collaboration
               </CardTitleOverlay>
               <CardDesc>
-                Internal & external team members to assist in virtual due diligence.
+                Your entire team gets access to all the data to ensure proper due diligence.
               </CardDesc> 
             </CardOverlay>
           </CardTwo>
@@ -97,9 +96,8 @@ const AboutSection = () => {
                 Customizable Settings
               </CardTitleOverlay>
               <CardDesc>
-                Feature rich settings to control intake forms,
-                review criteria, managing teams and automating
-                communication.
+                Create the solution you need including controlling intake forms,
+                reviewing criteria, team management, and automating communication.
               </CardDesc>
             </CardOverlay>
           </CardThree>
@@ -108,16 +106,16 @@ const AboutSection = () => {
           <CardFour>
             <Img src={ img4 }/>
             <CardTitle>
-                Review Companies
+                Comprehensive Shortlist
             </CardTitle>
             <CardOverlay>
               <CardTitleOverlay>
-                Review Companies
+                Comprehensive Shortlist
               </CardTitleOverlay>
               <CardDesc>
-                A state of the art review system to shortlist the
-                best deals for your fund.
-            </CardDesc>
+                Our state of the art review system reviews your list and finds the best
+                deals for your fund.
+              </CardDesc>
             </CardOverlay>
           </CardFour>
 
@@ -131,7 +129,7 @@ const AboutSection = () => {
                 Targeted Marketing
               </CardTitleOverlay>
               <CardDesc>
-                Promote your fund to specific startups based on your thesis.
+                Find the ideal startups to promote your fund to according to your thesis.
               </CardDesc>
             </CardOverlay>
           </CardFive>

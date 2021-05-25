@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BusinessContainer = styled.div`
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin-bottom: var(--mb-5);
   padding: 0 2rem;
 `;
@@ -30,7 +30,7 @@ export const StatsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin-bottom: var(--mb-4);
 `;
 

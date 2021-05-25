@@ -19,10 +19,15 @@ const PitchBoxSection = () => {
         <Bg src={bg}/>
         <PbTitle>Let's find your next fund</PbTitle>
         <PbDesc>
-          Simplifying scouting and due diligence for 
-          impact based Angel Networks, VC Funds,
-          Corporate Funds, or Startup Accelerators with
-          the PitchBox.
+          We have simplified the scouting and due diligence process for various
+          businesses including
+          <ul>
+            <li>Impact Based Angel Networks</li>
+            <li>VC and Corporate Funds</li>
+            <li>Startup Accelerators</li>
+          </ul>
+          Scroll through just a few of the firms we have helped find startup investment
+          opportunities that align with their thesis.
         </PbDesc>
         <PbBtn>
           <PbBtnLink>View Active PitchBoxes</PbBtnLink>
@@ -30,13 +35,15 @@ const PitchBoxSection = () => {
 
 
         <PbTitle>
-          Make an impact with diversity funding and become
-          an SDG participant
+          Join us in making a global impact with diversity funding and participating
+          in the Sustainable Development Goals initiative.
         </PbTitle>
         <PbDesc>
-          Diversity drives innovation - 
-          when we limit who can contribute,
-          we in turn limit what problems we can solve.
+          No longer will diverse or mission-driven startups be denied funding due
+          to lack of access.
+          <br/>
+          When we open up the doors and allow everyone to contribute, there is no
+          limit to what problems we can solve and challenges we can overcome.
         </PbDesc>
         <PbBtn>
           <FundBtnLink>View All Funds</FundBtnLink>

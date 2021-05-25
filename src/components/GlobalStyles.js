@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
 		--second-color-lighten: #FFFAFA;
 
 		/*===== Font and typography =====*/
-		--body-font: 'Poppins', sans-serif;
+		--body-font: 'Roboto', sans-serif;
 		--h1-font-size: 1.5rem;
 		--h2-font-size: 1.25rem;
 		--h3-font-size: 1rem;

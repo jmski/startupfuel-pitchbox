@@ -51,8 +51,8 @@ export const SideBarLink = styled(LinkS)`
 `;
 
 export const SideBtn = styled.div`
-margin-left: auto;
-margin-right: auto;
+/* margin-left: auto;
+margin-right: auto; */
 `;
 
 export const SideLinkBtn = styled(LinkR)`

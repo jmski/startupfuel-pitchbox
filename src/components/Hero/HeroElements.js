@@ -28,7 +28,7 @@ export const HeroContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	text-align: center;
-	max-width: 1024px;
+	/* max-width: 1024px; */
 	margin-top: -600px;
 	margin-bottom: 6rem;
 `;
