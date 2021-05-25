@@ -15,10 +15,13 @@ const HeroSection = () => {
       <HeroBanner/>
       <HeroContainer id="home">
         <HeroContent>
-          <HeroTitle>Dealflow Management for Startup Investors</HeroTitle>
+          <HeroTitle>
+            Finally, a Way for Startup Investors
+            to Find the Right Opportunities
+          </HeroTitle>
           <HeroDesc>
-            Helping you discover and access diverse startups all
-            while collecting, reviewing and tracking startup dealflow.
+            We help investors cut through the noise and match with startups
+            that align with their goals, objectives, and overall mission.
             <br/>
             <br/>
             Try our software for 14 days at no cost!
@@ -26,7 +29,7 @@ const HeroSection = () => {
           <HeroBtn>
             <HeroBtnLink
               to="/download"
-            >Get Started</HeroBtnLink>
+            >Let's Get Started</HeroBtnLink>
           </HeroBtn>
         </HeroContent>
 

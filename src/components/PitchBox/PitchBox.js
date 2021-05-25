@@ -19,7 +19,7 @@ const PitchBoxSection = () => {
         <Bg src={bg}/>
         <PbTitle>Let's find your next fund</PbTitle>
         <PbDesc>
-          Simplifying scouring and due diligence for 
+          Simplifying scouting and due diligence for 
           impact based Angel Networks, VC Funds,
           Corporate Funds, or Startup Accelerators with
           the PitchBox.

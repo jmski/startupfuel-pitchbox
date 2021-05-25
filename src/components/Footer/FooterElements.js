@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
+export const Footer = styled.div`
+  background: var(--color-dark-neutral);
+`;
+
 export const FooterContainer = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px 20px;
-  background: var(--color-dark-neutral);
   column-gap: 1rem;
   row-gap: 1rem;
+  max-width: 1024px;
 
 `;
 
