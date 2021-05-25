@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Footer = styled.div`
   background: var(--color-dark-neutral);
+  height: 344px;
 `;
 
 export const FooterContainer = styled.div`
@@ -21,7 +22,6 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   justify-content: center;
   text-align: left;
-  max-width: 1024px;
   column-gap: 1rem;
   row-gap: .1rem;
 `;
@@ -46,7 +46,7 @@ export const LogoImg = styled.img`
 
 export const FooterCopy = styled.span`
   color: var(--color-light-neutral);
-  font-size: var(--smallest-font-size);
+  font-size: 14px;
 `;
 
 export const Title = styled.span`
@@ -66,8 +66,8 @@ export const PodcastContainer = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
+  width: 108px;
+  height: 116px;
   border-radius: .75rem;
   background: var(--color-darker-neutral);
   color: var(--color-white);

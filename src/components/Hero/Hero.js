@@ -7,7 +7,11 @@ import {
   HeroDesc,
   HeroBtn,
   HeroBtnLink,
+  ImgWrapper,
+  Img,
 } from './HeroElements';
+
+import img from '../../img/heroprism.png';
 
 const HeroSection = () => {
   return (
@@ -32,14 +36,7 @@ const HeroSection = () => {
             >Let's Get Started</HeroBtnLink>
           </HeroBtn>
         </HeroContent>
-
-        {/* <HeroContent>
-          <HeroTitle>Insert Picture Here</HeroTitle>
-          <HeroDesc>
-            PS. Still working on the gradient thing.
-            It's a pain in the butt
-          </HeroDesc>
-        </HeroContent> */}
+        <ImgWrapper><Img src={ img }/></ImgWrapper>
       </HeroContainer>
     </>
   )

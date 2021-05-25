@@ -21,16 +21,24 @@ export const Bg = styled.img`
  }
 `;
 
+export const Pb = styled.div`
+  margin-bottom: 5rem;
+`;
+
 export const PbTitle = styled.h1`
-  font-weight: var(--normal-font);
+  font-weight: normal;
+  font-size: 42px;
+  margin-left: 2rem;
 `;
 
 export const PbDesc = styled.p`
-font-weight: var(--normal-semi-bold);
+  font-weight: var(--normal-semi-bold);
   margin-bottom: var(--mb-5);
+  margin-left: 2rem;
 `;
 
 export const PbBtn = styled.div`
+  margin-left: 2rem;
   margin-bottom: var(--mb-4);
 `;
 
@@ -44,6 +52,20 @@ export const PbBtnLink = styled(LinkR)`
   &:hover {
     background: #59019f;
   }
+`;
+
+export const Fund = styled.div`
+  max-width: 700px;
+  margin-bottom: var(--mb-4);
+`;
+
+export const FundTitle = styled(PbTitle)`
+  text-align: center;
+  margin-bottom: var(--mb-4);
+`;
+
+export const FundBtn = styled(PbBtn)`
+  /* text-align: center; */
 `;
 
 export const FundBtnLink = styled(LinkR)`

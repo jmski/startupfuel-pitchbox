@@ -45,16 +45,20 @@ padding: 2rem;
 
 export const AboutTitle = styled.h1`
   margin-bottom: var(--mb-2);
+  font-size: 42px;
+  font-weight: normal;
 `;
 
 export const AboutSubtitle = styled.h3`
   color: var(--color-blue);
+  font-weight: bold;
+  font-size: 27px;
   margin-bottom: var(--mb-2);
 `;
 
 export const AboutDesc = styled.p`
   margin-bottom: var(--mb-4);
-  font-size: var(--smaller-font-size);
+  font-size: 16px;
 `;
 
 export const AboutBtn = styled.div`

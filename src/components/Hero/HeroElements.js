@@ -30,7 +30,7 @@ export const HeroContainer = styled.div`
 	text-align: center;
 	/* max-width: 1024px; */
 	margin-top: -600px;
-	margin-bottom: 6rem;
+	margin-bottom: 10rem;
 `;
 
 export const HeroContent = styled.div`
@@ -45,6 +45,7 @@ export const HeroTitle = styled.h1`
 	z-index: 10;
 	margin-bottom: var(--mb-2);
 	font-weight: normal;
+	font-size: 42px;
 `;
 
 export const HeroDesc = styled.p`
@@ -69,4 +70,14 @@ export const HeroBtnLink = styled(LinkR)`
 	&:hover {
 		background: var(--color-darker-neutral);
 	}
+`;
+
+export const ImgWrapper = styled.div`
+	z-index: 10;
+`;
+
+export const Img = styled.img`
+	width: 100%;
+	width: 684px;
+	height: auto;
 `;
