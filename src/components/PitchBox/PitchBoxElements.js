@@ -55,7 +55,9 @@ export const PbBtnLink = styled(LinkR)`
 `;
 
 export const Fund = styled.div`
-  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* max-width: 700px; */
   margin-bottom: var(--mb-4);
 `;
 
@@ -78,4 +80,21 @@ export const FundBtnLink = styled(LinkR)`
   &:hover {
     background: #96031b;
   }
+`;
+
+export const Wrap = styled.div`
+
+`;
+
+export const Video = styled.video`
+  width: 100%;
+  height: 100%;
+/* @media screen and (min-width: 768px) {
+  width: 70%;
+  height: 70%; */
+}
+`;
+
+export const Img = styled.img`
+
 `;

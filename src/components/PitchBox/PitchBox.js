@@ -11,10 +11,15 @@ import {
   FundBtn,
   FundTitle,
   FundBtnLink,
+  Wrap,
+  // Video,
+  Img,
 
 
 } from './PitchBoxElements';
 import bg from '../../img/blob.png';
+// import video from '../../img/SustainableDevelopmentGoals.mp4';
+import img from '../../img/SustainableDevelopmentGoals.gif';
 
 const PitchBoxSection = () => {
   return (
@@ -38,12 +43,12 @@ const PitchBoxSection = () => {
             <PbBtnLink>View Active PitchBoxes</PbBtnLink>
           </PbBtn>
         </Pb>
-
         <FundTitle>
           Join us in making a global impact with diversity funding and participating
           in the Sustainable Development Goals initiative.
         </FundTitle>
         <Fund>
+          <Wrap>
           <PbDesc>
             No longer will diverse or mission-driven startups be denied funding due
             to lack of access.
@@ -54,6 +59,12 @@ const PitchBoxSection = () => {
           <FundBtn>
             <FundBtnLink>View All Funds</FundBtnLink>
           </FundBtn>
+          </Wrap>
+          {/* <Wrap>
+            test
+          </Wrap>
+          <Video autoPlay loop muted src={ video } type='video/mp4' /> */}
+          <Img src={ img } />
         </Fund>
 
 
