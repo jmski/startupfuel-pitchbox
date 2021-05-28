@@ -6,6 +6,20 @@ export const PbContainer = styled.div`
   margin-bottom: var(--mb-4);
 `; 
 
+export const Vector = styled.div`
+  position: absolute;
+  width: 1200.79px;
+  height: 1189.94px;
+  /* left: 970.91px;
+  top: 3486.91px; */
+
+  background: rgba(229, 229, 229, 0.25);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix(0.54, -0.84, -0.84, -0.54, 0, 0);
+`;
+
+
 export const Bg = styled.img`
   position: absolute;
   left: 0; 
@@ -14,7 +28,7 @@ export const Bg = styled.img`
   transform: scaleX(-1);
   transform: scaleY(-1);
   overflow: hidden;
-  opacity: 30%;
+  opacity: 80%;
 
  @media screen and (min-width: 768px) {
    display: block;
@@ -23,23 +37,23 @@ export const Bg = styled.img`
 
 export const Pb = styled.div`
   margin-bottom: 5rem;
+  width: 40%;
+  margin-left: 125px;
 `;
 
 export const PbTitle = styled.h1`
   font-weight: normal;
-  font-size: 42px;
-  margin-left: 2rem;
+  font-size: 38px;
 `;
 
 export const PbDesc = styled.p`
-  font-weight: var(--normal-semi-bold);
+  font-weight: normal;
   margin-bottom: var(--mb-5);
-  margin-left: 2rem;
+  font-size: 16px;
 `;
 
 export const PbBtn = styled.div`
-  margin-left: 2rem;
-  margin-bottom: var(--mb-4);
+  margin-bottom: 150px;
 `;
 
 export const PbBtnLink = styled(LinkR)`
@@ -48,6 +62,8 @@ export const PbBtnLink = styled(LinkR)`
   border-radius: .5rem;
   padding: 1rem 1rem;
   font-weight: normal;
+  font-size: 18px;
+
 
   &:hover {
     background: #59019f;
@@ -59,15 +75,25 @@ export const Fund = styled.div`
   grid-template-columns: repeat(2, 1fr);
   /* max-width: 700px; */
   margin-bottom: var(--mb-4);
+  margin-left: 125px;
 `;
 
-export const FundTitle = styled(PbTitle)`
+export const FundTitle = styled.h4`
   text-align: center;
+  font-weight: normal;
+  font-size: 38px;
   margin-bottom: var(--mb-4);
+  margin-left: 125px;
+  margin-right: 125px;
 `;
 
 export const FundBtn = styled(PbBtn)`
   /* text-align: center; */
+`;
+
+export const FundDesc = styled.div`
+padding-right: 50px;
+margin-bottom: 50px;
 `;
 
 export const FundBtnLink = styled(LinkR)`
@@ -76,6 +102,7 @@ export const FundBtnLink = styled(LinkR)`
   border-radius: .5rem;
   padding: 1rem 1rem;
   font-weight: normal;
+  font-size: 18px;
 
   &:hover {
     background: #96031b;

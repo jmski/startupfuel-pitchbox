@@ -19,18 +19,14 @@ export const FooterContainer = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-top: 25px;
+  margin-left: 125px;
   justify-content: center;
   text-align: left;
-  column-gap: 1rem;
-  row-gap: .1rem;
+  
+  /* column-gap: 1rem; */
 `;
 
-export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
-`;
 
 export const FooterLogo = styled.a`
   position: relative;
@@ -49,16 +45,17 @@ export const FooterCopy = styled.span`
   font-size: 14px;
 `;
 
-export const Title = styled.span`
+export const Title = styled.h4`
   font-weight: var(--font-semi-bold);
-  font-size: var(--small-font-size);
+  font-size: 16px;
   color: var(--color-white);
+  margin-bottom: 15px;
 `;
 
 export const Link = styled.a`
   color: var(--color-light-neutral);
   font-size: var(--smaller-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 15px;
   cursor: pointer;
 `;
 
@@ -81,10 +78,13 @@ export const PodTitle = styled.span`
 
 export const SocialWrapper = styled(Wrapper)`
   flex-direction: row;
+  margin-top: 25px;
 `;
 
 
 export const SocialLink = styled(Link)`
-  font-size: var(--normal-font-size);
+  font-size: 25px;
+  padding-right: 25px;
+
   color: var(--color-white);
 `;

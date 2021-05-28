@@ -2,37 +2,39 @@ import styled from 'styled-components';
 
 export const BusinessContainer = styled.div`
   /* max-width: 1024px; */
-  margin-bottom: 10rem;
+  margin-bottom: 150px;
+  margin-left: 125px;
+  margin-right: 125px;
 `;
 
 export const BusinessTitle = styled.h3`
   text-align: center;
-  margin-bottom: var(--mb-1);
+  margin-bottom: 50px;
   font-weight: normal; 
   font-size: 32px;
 `;
 
 export const BusinessWrap = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: .5rem;
   row-gap: 2rem;
 `;
 
 export const Img = styled.img`
-  position: grid;
-  width: 120px;
+  width: 150px;
+  height: auto;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
 
 `;
 
 export const StatsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
   /* max-width: 1024px; */
   margin-bottom: 10rem;
+  margin-left: 125px;
+  margin-right: 125px;
 `;
 
 export const StatsItem = styled.div`
@@ -46,8 +48,7 @@ export const StatsTitle = styled.h1`
 `;
 
 export const StatsSubtitle = styled.span`
-display: block;
-  font-weight: var(--font-medium);
+  display: block;
   font-size: 24px;
   margin-top: -.5rem;
 `;

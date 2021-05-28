@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 		--h1-font-size: 1.5rem;
 		--h2-font-size: 1.25rem;
 		--h3-font-size: 1rem;
-		--normal-font-size: .938rem;
+		--normal-font-size: 18px;
 		--small-font-size: .813rem;
 		--smaller-font-size: .75rem;
 		--smallest-font-size: .5rem;

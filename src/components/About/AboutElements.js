@@ -4,8 +4,9 @@ import { Link as LinkR } from 'react-router-dom';
 export const AboutContainer = styled.div`
   display: grid;
   /* max-width: 1024px; */
-  margin-bottom: var(--mb-4);
-
+  margin-bottom: 100px;
+  margin-left: 125px;
+  margin-right: 125px;
 
   @media screen and (min-width: 768px) {
     display: grid;
@@ -17,7 +18,7 @@ export const Bg = styled.img`
   width: 100%;
   position: absolute;
   display: none;
-  opacity: 30%;
+  opacity: 60%;
   z-index: -1;
 
   @media screen and (min-width: 768px) {
@@ -36,16 +37,16 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: var(--mb-4);
 text-align: center;
-padding: 2rem;
+padding-right: 150px;
 
 @media screen and (min-width: 768px) {
   text-align: left;
 }
 `;
 
-export const AboutTitle = styled.h1`
+export const AboutTitle = styled.h2`
   margin-bottom: var(--mb-2);
-  font-size: 42px;
+  font-size: 38px;
   font-weight: normal;
 `;
 
@@ -53,11 +54,11 @@ export const AboutSubtitle = styled.h3`
   color: var(--color-blue);
   font-weight: bold;
   font-size: 27px;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 5px;
 `;
 
 export const AboutDesc = styled.p`
-  margin-bottom: var(--mb-4);
+  margin-bottom: 40px;
   font-size: 16px;
 `;
 
@@ -71,6 +72,7 @@ export const AboutBtnLink = styled(LinkR)`
   padding: 1rem 1rem;
   border-radius: .5rem;
   font-weight: normal;
+  font-size: 18px;
 
   &:hover {
     background: #2777a7;
@@ -110,23 +112,23 @@ export const CardContent = styled.div`
 `;
 
 export const CardOne = styled(CardContent)`
-  border: 2px solid var(--color-purple);
+  border: 3px solid var(--color-purple);
 `;
 
 export const CardTwo = styled(CardContent)`
-  border: 2px solid var(--color-blue);
+  border: 3px solid var(--color-blue);
 `;
 
 export const CardThree = styled(CardContent)`
-  border: 2px solid var(--color-yellow);
+  border: 3px solid var(--color-yellow);
 `;
 
 export const CardFour = styled(CardContent)`
-  border: 2px solid var(--color-red);
+  border: 3px solid var(--color-red);
 `;
 
 export const CardFive = styled(CardContent)`
-  border: 2px solid var(--color-green);
+  border: 3px solid var(--color-green);
 `;
 
 export const CardTitle = styled.h3`

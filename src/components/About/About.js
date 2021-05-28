@@ -34,7 +34,7 @@ const AboutSection = () => {
       <AboutContainer id="about">
         <Bg src={bg}/>
         <AboutInfo>
-          <AboutSubtitle>Powered by Startup Fuel</AboutSubtitle>
+          <AboutSubtitle>Powered by StartupFuel</AboutSubtitle>
           <AboutTitle>What is the PitchBox?</AboutTitle>
           <AboutDesc>
             PitchBox helps startup investors find innovative and impactful

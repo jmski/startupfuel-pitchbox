@@ -23,13 +23,14 @@ export const Business = () => {
     <>
       <BusinessContainer>
         <BusinessTitle>
-          Join the Thousands of Companies Using StartupFuel to Scale their Business
+          Join the Movement and the Thousands of Companies Who are Using Us to Scale Their Business
         </BusinessTitle>
         <BusinessWrap>
          <Img src={ img1 }/>
          <Img src={ img2 }/>
          <Img src={ img3 }/>
          <Img src={ img4 }/>
+         <Img src={ img2 }/>
         </BusinessWrap>
       </BusinessContainer>
     </>
