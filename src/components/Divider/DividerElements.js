@@ -14,13 +14,6 @@ export const BusinessTitle = styled.h3`
   font-size: 32px;
 `;
 
-export const BusinessWrap = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: .5rem;
-  row-gap: 2rem;
-`;
-
 export const Img = styled.img`
   width: 150px;
   height: auto;

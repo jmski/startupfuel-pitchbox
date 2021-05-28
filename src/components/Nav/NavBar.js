@@ -2,24 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 import { 
-	Header,
 	NavContainer,
 	NavLogo,
 	Img,
-	NavMobileBtn,
-	BurgerIcon,
-	// NavMenu,
-	// NavItem,
-	// NavLink,
 	NavBtn,
 	NavBtnLink,
 
  } from './NavBarElements';
 
 import img from '../../img/PitchBoxIcon.png';
-import { FaBars } from 'react-icons/fa';
 
-const NavBar = ({ toggle }) => {
+const NavBar = () => {
 
 	const [ scrollnav, setScrollnav ] = useState(false);
 
@@ -41,67 +34,23 @@ const NavBar = ({ toggle }) => {
 
 	return (
 		<>
-			<Header scrollnav={ scrollnav }>
-				<NavContainer>
-					<NavLogo to='/' onClick={ toggleHome }>
-						<Img src={ img } />
-					</NavLogo>
-					<NavMobileBtn>
-						<NavBtnLink scrollnav={ scrollnav }>Book Free Demo</NavBtnLink>
-					</NavMobileBtn>
-					<BurgerIcon onClick={ toggle }>
-						<FaBars />
-					</BurgerIcon>
+			<NavContainer scrollnav={ scrollnav }>
 
-					{/* <NavMenu>
+				<NavLogo to='/' onClick={ toggleHome }>
+					<Img src={ img } />
+				</NavLogo>
 
-						<NavItem>
-							<NavLink
-								to="home"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={-80}
-							>
-								Home
-							</NavLink>
-						</NavItem>
-
-						<NavItem>
-							<NavLink								
-								to="about"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={0}
-							>
-								About
-							</NavLink>
-						</NavItem>
-
-						<NavItem>
-						<NavLink								
-								to="contact"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={0}
-							>
-								Contact
-							</NavLink>
-						</NavItem>
-
-					</NavMenu> */}
-
-					<NavBtn>
-						<NavBtnLink scrollnav={ scrollnav }>Book Free Demo</NavBtnLink>
-					</NavBtn>
-
-				</NavContainer>
-			</Header>
+				<NavBtn>
+					<NavBtnLink 
+						scrollnav={ scrollnav }
+						to="//www.jmgelua.ca"
+						target="_blank"
+					>
+						Book Free Demo
+					</NavBtnLink>
+				</NavBtn>
+				
+			</NavContainer>
 		</>
 	)
 }

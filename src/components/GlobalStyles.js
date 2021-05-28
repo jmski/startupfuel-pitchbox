@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 	:root {
-		--header-height: 3rem;
+		--header-height: 100px;
 		--nav-width: 324px;
 
 		/*===== Font weight =====*/
@@ -92,6 +92,11 @@ export const GlobalStyles = createGlobalStyle`
 			margin-top: var(--header-height);
 			
 		}
+	}
+
+	canvas {
+		width: 100%;
+		height: 100%;
 	}
 
 	h1, h2, h3, p {

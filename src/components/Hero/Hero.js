@@ -10,13 +10,12 @@ import {
   ImgWrapper,
   Img,
 } from './HeroElements';
-
 import img from '../../img/heroprism.png';
 
 const HeroSection = () => {
   return (
     <>
-      <HeroBanner/>
+      <HeroBanner />
       <HeroContainer id="home">
         <HeroContent>
           <HeroTitle>
