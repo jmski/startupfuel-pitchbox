@@ -1,20 +1,39 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyles } from './components/GlobalStyles';
+import './style.css';
 
-import Home from './pages/home';
+import { Gradient } from './webgl.js';
 
-const App = () => {
+import NavBar from './components/Nav/NavBar';
+import HeroSection from './components/Hero/Hero';
+import AboutSection from './components/About/About';
+import { Business } from './components/Divider/Divider';
+import PitchBoxSection from './components/PitchBox/PitchBox';
+import { Stats } from './components/Divider/Divider';
+import { Footer } from './components/Footer/FooterElements';
+
+
+export default function App() {
+
+  React.useEffect(() => {
+    var gradient = new Gradient();
+    gradient.initGradient('#gradient-canvas');
+  });
+
   return (
     <>
       <Router>
-				<Switch>
-					<Route path='/' component={Home} exact />
-				</Switch>
-				<GlobalStyles />
-
+        <canvas id="gradient-canvas" />
+        <NavBar />
+        <HeroSection />
+        <Business />
+        <AboutSection />
+        <Stats />
+        <PitchBoxSection />
+        <Footer />
+        <GlobalStyles />
       </Router>
     </>
   );
 }
-
-export default App;

@@ -81,11 +81,11 @@ export const AboutBtnLink = styled(LinkR)`
 
 export const CardsContainer = styled.div`
 	max-width: 1024px;
-	display: grid;
-  grid-template-columns: repeat(, 1fr);
+	display: flex;
+  /* grid-template-columns: repeat(, 1fr); */
 	width: calc(100% - 2rem);
-  column-row: -2rem;
-  grid-row: -2rem;
+  /* column-row: -2rem;
+  grid-row: -2rem; */
 	margin-left: var(--mb-2);
 	margin-right: var(--mb-2);
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   AboutContainer,
-  // Bg,
   AboutInfo,
   AboutTitle,
   AboutSubtitle,
@@ -32,7 +31,6 @@ const AboutSection = () => {
   return (
     <>
       <AboutContainer id="about">
-        {/* <Bg src={bg}/> */}
         <AboutInfo>
           <AboutSubtitle>Powered by StartupFuel</AboutSubtitle>
           <AboutTitle>What is the PitchBox?</AboutTitle>

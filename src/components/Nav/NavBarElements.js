@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
 	top: 0;
 	display: fixed;
 	position: sticky;
-	z-index: 999;
+	z-index: var(--z-fixed);
 	overflow: hidden;
 	height: var(--header-height);
 	margin-top: calc(-1 * var(--header-height));

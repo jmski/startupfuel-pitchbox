@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   HeroContainer,
-  HeroBanner,
   HeroContent,
   HeroTitle,
   HeroDesc,
@@ -15,7 +14,6 @@ import img from '../../img/heroprism.png';
 const HeroSection = () => {
   return (
     <>
-      <HeroBanner />
       <HeroContainer id="home">
         <HeroContent>
           <HeroTitle>

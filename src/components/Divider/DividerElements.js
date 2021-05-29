@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const BusinessContainer = styled.div`
-  /* max-width: 1024px; */
   margin-bottom: 150px;
   margin-left: 125px;
   margin-right: 125px;

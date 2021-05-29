@@ -110,7 +110,9 @@ export const FundBtnLink = styled(LinkR)`
 `;
 
 export const Wrap = styled.div`
-
+  align-content: center;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const Video = styled.video`
