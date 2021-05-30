@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
   margin-top: 25px;
   margin-left: 125px;
   z-index: 1;
+  overflow: hidden;
 `;
 
 export const Wrapper = styled.div`

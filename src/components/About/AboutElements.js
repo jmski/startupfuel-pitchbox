@@ -84,6 +84,7 @@ export const CardsContainer = styled.div`
 	max-width: 500px;
 	column-gap: 20px;
 	row-gap: 20px;
+	margin-right: auto;
 
 	@media screen and (min-width: 768px) {
 		grid-template-columns: repeat(2, 1fr);
@@ -146,11 +147,15 @@ export const CardThree = styled(Card)`
 
 export const CardFour = styled(Card)`
 	border: 3px solid var(--color-red);
-
+	position: relative;
+	left: 110px;
+	top: -100px;
 `;
 
 export const CardFive = styled(Card)`
 	border: 3px solid var(--color-green);
+	left: 110px;
+	top: -100px;
 
 `;
 

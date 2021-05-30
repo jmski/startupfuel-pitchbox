@@ -98,8 +98,6 @@ const FooterSection = ( toggle ) => {
             </SocialLink>
           </SocialWrapper>
 
-
-
         </FooterContainer>
       </Footer>
     </>
