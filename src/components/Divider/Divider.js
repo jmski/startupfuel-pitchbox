@@ -36,8 +36,6 @@ const responsive = {
   }
 };
 
-
-
 export const Business = () => {
   return (
     <>

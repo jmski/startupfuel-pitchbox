@@ -2,40 +2,35 @@ import styled from 'styled-components';
 
 export const Footer = styled.div`
   background: var(--color-dark-neutral);
-  height: 344px;
+  height: 300px;
+  z-index: 0;
 `;
 
 export const FooterContainer = styled.div`
-  position: relative;
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px 20px;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  /* max-width: 1024px; */
-
+  margin-top: 25px;
+  margin-left: 125px;
+  z-index: 1;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
-  margin-left: 125px;
-  justify-content: center;
-  text-align: left;
-  
-  /* column-gap: 1rem; */
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 150px;
 `;
 
 
 export const FooterLogo = styled.a`
-  position: relative;
-  margin-bottom: 5rem;
   cursor: pointer;
-
+  margin-bottom: 150px;
 `;
 
 export const LogoImg = styled.img`
+  margin-top: 15px;
   width: 100%;
   max-width: 200px;
 `;
@@ -60,9 +55,6 @@ export const Link = styled.a`
 `;
 
 export const PodcastContainer = styled.div`
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   width: 108px;
   height: 116px;
   border-radius: .75rem;
@@ -72,19 +64,17 @@ export const PodcastContainer = styled.div`
 `;
 
 export const PodTitle = styled.span`
-  font-size: var(--smallest-font-size);
-  font-weight: var(--font-semi-bold);
+
 `;
 
 export const SocialWrapper = styled(Wrapper)`
+  margin-top: 20px;
   flex-direction: row;
-  margin-top: 25px;
 `;
 
 
 export const SocialLink = styled(Link)`
   font-size: 25px;
   padding-right: 25px;
-
   color: var(--color-white);
 `;

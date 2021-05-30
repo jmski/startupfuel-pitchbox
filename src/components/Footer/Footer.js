@@ -98,10 +98,17 @@ const FooterSection = ( toggle ) => {
             </SocialLink>
           </SocialWrapper>
 
+
+
         </FooterContainer>
       </Footer>
     </>
   )
 }
+
+
+
+          
+
 
 export default FooterSection;

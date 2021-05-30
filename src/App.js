@@ -11,7 +11,7 @@ import AboutSection from './components/About/About';
 import { Business } from './components/Divider/Divider';
 import PitchBoxSection from './components/PitchBox/PitchBox';
 import { Stats } from './components/Divider/Divider';
-import { Footer } from './components/Footer/FooterElements';
+import FooterSection from './components/Footer/Footer';
 
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
         <AboutSection />
         <Stats />
         <PitchBoxSection />
-        <Footer />
+        <FooterSection />
         <GlobalStyles />
       </Router>
     </>

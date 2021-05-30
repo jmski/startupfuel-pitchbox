@@ -23,7 +23,6 @@ export const Img = styled.img`
 export const StatsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* max-width: 1024px; */
   margin-bottom: 10rem;
   margin-left: 125px;
   margin-right: 125px;
@@ -31,7 +30,6 @@ export const StatsContainer = styled.div`
 
 export const StatsItem = styled.div`
   text-align: center;
-  /* width: 40% */
 `;
 
 export const StatsTitle = styled.h1`

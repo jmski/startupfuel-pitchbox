@@ -8,19 +8,30 @@ import {
   AboutBtn,
   AboutBtnLink,
   CardsContainer,
-  // CardContent,
+
+
   CardOne,
   CardTwo,
   CardThree,
   CardFour,
   CardFive,
-  CardOverlay,
+
+  ImgOne,
+  ImgTwo,
+  ImgThree,
+  ImgFour,
+  ImgFive,
+
+  CardOneOverlay,
+  CardTwoOverlay,
+  CardThreeOverlay,
+  CardFourOverlay,
+  CardFiveOverlay,
+
   CardTitle,
-  CardTitleOverlay,
   CardDesc,
-  Img,
 } from './AboutElements';
-// import bg from '../../img/blob.png';
+
 import img1 from '../../img/svg/undraw_filter.svg';
 import img2 from '../../img/svg/undraw_team.svg';
 import img3 from '../../img/svg/undraw_personal.svg';
@@ -50,11 +61,72 @@ const AboutSection = () => {
         </AboutInfo>
 
 
-
-
-
         <CardsContainer>
+
           <CardOne>
+            <ImgOne src={ img1 } />
+            <CardOneOverlay>
+              <CardTitle>
+                Filter Startups
+              </CardTitle>
+              <CardDesc>
+                Save time by filtering out deals that don't fit your thesis.
+              </CardDesc>
+            </CardOneOverlay>
+          </CardOne>
+
+          <CardTwo>
+            <ImgTwo src={ img2 } />
+            <CardTwoOverlay>
+              <CardTitle>
+                Team Collaboration
+              </CardTitle>
+              <CardDesc>
+                Your entire team gets access to all the data to ensure proper due diligence.
+              </CardDesc> 
+            </CardTwoOverlay>
+          </CardTwo>
+
+          <CardThree>
+            <ImgThree src={ img3 } />
+            <CardThreeOverlay>
+              <CardTitle>
+                Customizable Settings
+              </CardTitle>
+              <CardDesc>
+                Create the solution you need including controlling intake forms,
+                reviewing criteria, team management, and automating communication.
+              </CardDesc>
+            </CardThreeOverlay>
+          </CardThree>
+
+          <CardFour>
+            <ImgFour src={ img4 } />
+            <CardFourOverlay>
+              <CardTitle>
+                  Comprehensive Shortlist
+              </CardTitle>
+              <CardDesc>
+                Our state of the art review system reviews your list and finds the best
+                deals for your fund.
+              </CardDesc>
+            </CardFourOverlay>
+          </CardFour>
+
+          <CardFive>
+            <ImgFive src={ img5 } />
+            <CardFiveOverlay>
+              <CardTitle>
+                Targeted Marketing
+              </CardTitle>
+              <CardDesc>
+                Find the ideal startups to promote your fund to according to your thesis.
+              </CardDesc>
+            </CardFiveOverlay>
+          </CardFive>
+
+
+          {/* <CardOne>
             <Img src={ img1 }/>
             <CardTitle>
               Filter Startups
@@ -130,7 +202,7 @@ const AboutSection = () => {
                 Find the ideal startups to promote your fund to according to your thesis.
               </CardDesc>
             </CardOverlay>
-          </CardFive>
+          </CardFive> */}
 
         </CardsContainer>
 

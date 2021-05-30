@@ -53,14 +53,15 @@ const PitchBoxSection = () => {
         </FundTitle>
         <Fund>
           <Wrap>
-          <FundDesc>
-          No longer will diverse or mission-driven startups be denied funding due to lack of access.
-
-<br/><br/>When we open up the doors and allow everyone to contribute, there is no limit to what problems we can solve and challenges we can overcome.
-          </FundDesc>
-          <FundBtn>
-            <FundBtnLink>View All Funds</FundBtnLink>
-          </FundBtn>
+            <FundDesc>
+              No longer will diverse or mission-driven startups be denied funding due to lack of access.
+              <br/>
+              <br/>
+              When we open up the doors and allow everyone to contribute, there is no limit to what problems we can solve and challenges we can overcome.
+            </FundDesc>
+            <FundBtn>
+              <FundBtnLink>View All Funds</FundBtnLink>
+            </FundBtn>
           </Wrap>
           {/* <Wrap>
             test

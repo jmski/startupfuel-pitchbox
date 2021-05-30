@@ -41,7 +41,7 @@ export const Pb = styled.div`
   margin-left: 125px;
 `;
 
-export const PbTitle = styled.h1`
+export const PbTitle = styled.h2`
   font-weight: normal;
   font-size: 38px;
 `;
@@ -92,8 +92,10 @@ export const FundBtn = styled(PbBtn)`
 `;
 
 export const FundDesc = styled.div`
-padding-right: 50px;
-margin-bottom: 50px;
+  margin-top: 150px;
+  text-align: left;
+  padding-right: 50px;
+  margin-bottom: 50px;
 `;
 
 export const FundBtnLink = styled(LinkR)`

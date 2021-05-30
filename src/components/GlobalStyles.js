@@ -59,7 +59,11 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	html {
-		scroll-behavior:smooth;
+
+	}
+
+	h1, h2, h3 {
+		margin: 0;
 	}
 
 	body {
@@ -79,24 +83,8 @@ export const GlobalStyles = createGlobalStyle`
 		}
 	}
 
-	h1, h2, h3, p {
-		margin: 0;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
 	a {
 		text-decoration: none;
-	}
-
-	img {
-		max-width: 100%;
-		height: auto;
-		display: block;
 	}
 
 `;
