@@ -1,8 +1,6 @@
 import React from 'react';
 import { 
   PbContainer,
-  // Vector,
-  // Bg,
   Pb,
   PbTitle,
   PbDesc,
@@ -14,21 +12,16 @@ import {
   FundDesc,
   FundBtnLink,
   Wrap,
-  // Video,
   Img,
 
 
 } from './PitchBoxElements';
-// import bg from '../../img/blob.png';
-// import video from '../../img/SustainableDevelopmentGoals.mp4';
 import img from '../../img/SustainableDevelopmentGoals.gif';
 
 const PitchBoxSection = () => {
   return (
     <>
       <PbContainer id="contact">
-        {/* <Vector /> */}
-        {/* <Bg src={bg}/> */}
         <Pb>
           <PbTitle>
             Helping You Find Your Next Lucrative Deal</PbTitle>

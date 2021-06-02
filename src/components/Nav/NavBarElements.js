@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const NavContainer = styled.div`
-	top: 0;
+	top: 0px;
 	display: fixed;
 	position: sticky;
 	z-index: var(--z-fixed);
@@ -13,10 +13,14 @@ export const NavContainer = styled.div`
 	background: ${({ scrollnav }) => (scrollnav ? 'var(--color-white)' : 'transparent')};
 	box-shadow: ${({ scrollnav }) => (scrollnav ? `0 2px 20px 1px rgba(0, 0, 0, 0.1)` : 'transparent')};
 	transition: all 0.3s ease-in-out;
+	padding-top: 30px;
+
+	@media screen and (min-width: 640px) {
+		height: calc(var(--header-height) + 30px);
+	}
 `;
 
 export const NavLogo = styled(LinkS)`
-
 `;
 
 export const Img = styled.img`
@@ -24,10 +28,19 @@ export const Img = styled.img`
 	width: 100%;
 	max-width: 400px;
 	margin-left: 125px;
+
+	@media screen and (max-width: 640px) {
+		max-width: 220px;
+		margin-left: 30px;
+	}
 `;
 
 export const NavBtn = styled.nav`
 	padding-top: 20px;
+
+	@media screen and (max-width: 640px) {
+		padding-top: 5px;
+	}
 `;
 
 export const NavBtnLink = styled(LinkR)`
@@ -47,5 +60,11 @@ export const NavBtnLink = styled(LinkR)`
 	&:hover {
 		background: ${({ scrollnav }) => (scrollnav ? 'var(--color-light-neutral)' : 'var(--color-dark-neutral)')};
 		color: ${({ scrollnav }) => (scrollnav ? 'var(--color-dar-neutral)' : 'var(--color-light-neutral)')};
+	}
+
+	@media screen and (max-width: 640px) {
+		margin-right: 30px;
+		font-size: 15px;
+		padding: .5rem .5rem;
 	}
 `;

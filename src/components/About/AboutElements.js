@@ -3,13 +3,19 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const AboutContainer = styled.div`
 	display: grid;
-	margin-bottom: 100px;
 	margin-left: 125px;
 	margin-right: 125px;
 
 	@media screen and (min-width: 768px) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+
+	@media screen and (max-width: 640px) {
+		margin-right: 30px;
+		margin-left: 30px;
+		margin-bottom: 50px;
 	}
 `;
 
@@ -37,8 +43,14 @@ margin-right: auto;
 margin-bottom: var(--mb-4);
 text-align: center;
 padding-right: 150px;
+font-weight: normal;
 
 @media screen and (min-width: 768px) {
+	text-align: left;
+}
+
+@media screen and (max-width: 640px) {
+	padding-right: 0;
 	text-align: left;
 }
 `;
@@ -47,6 +59,10 @@ export const AboutTitle = styled.h2`
 	margin-bottom: var(--mb-2);
 	font-size: 38px;
 	font-weight: normal;
+
+	@media screen and (max-width: 640px) {
+		font-size: 24px;
+	}
 `;
 
 export const AboutSubtitle = styled.h3`
@@ -54,6 +70,10 @@ export const AboutSubtitle = styled.h3`
 	font-weight: bold;
 	font-size: 27px;
 	margin-bottom: 5px;
+
+	@media screen and (max-width: 640px) {
+		font-size: 18px;
+	}
 `;
 
 export const AboutDesc = styled.p`
@@ -76,22 +96,23 @@ export const AboutBtnLink = styled(LinkR)`
 	&:hover {
 		background: #2777a7;
 	}
+
+	@media screen and (max-width: 640px) {
+		font-size: 16px;
+		padding: .7rem .7rem;
+	}
 `;
 
 export const CardsContainer = styled.div`
 	display: grid;
-	grid-template-columns: 100%;
+	grid-template-columns: repeat(3, 1fr);
 	max-width: 500px;
 	column-gap: 20px;
 	row-gap: 20px;
 	margin-right: auto;
 
-	@media screen and (min-width: 768px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	@media screen and (min-width: 1024px) {
-		grid-template-columns: repeat(3, 1fr);
+	@media screen and (max-width: 1024px) {
+		display: none;
 	}
 `;
 

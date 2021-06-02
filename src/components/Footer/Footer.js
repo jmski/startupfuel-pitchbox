@@ -13,6 +13,7 @@ import {
   PodTitle,
   SocialWrapper,
   SocialLink,
+  MobileFooterCopy,
 
 } from './FooterElements';
 import { FaTwitter, FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
@@ -97,7 +98,7 @@ const FooterSection = ( toggle ) => {
               <FaLinkedin />
             </SocialLink>
           </SocialWrapper>
-
+          <MobileFooterCopy>© Copyright 2021 StartupFuel Inc.</MobileFooterCopy>
         </FooterContainer>
       </Footer>
     </>

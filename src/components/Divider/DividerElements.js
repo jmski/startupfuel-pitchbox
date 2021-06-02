@@ -4,6 +4,12 @@ export const BusinessContainer = styled.div`
   margin-bottom: 150px;
   margin-left: 125px;
   margin-right: 125px;
+
+  @media screen and (max-width: 640px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+  }
 `;
 
 export const BusinessTitle = styled.h3`
@@ -18,14 +24,24 @@ export const Img = styled.img`
   height: auto;
   margin: auto;
 
+  @media screen and (max-width: 640px) {
+    width: 200px;
+  }
+
 `;
 
 export const StatsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 10rem;
+  margin-bottom: 100px;
   margin-left: 125px;
   margin-right: 125px;
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 `;
 
 export const StatsItem = styled.div`
@@ -35,10 +51,17 @@ export const StatsItem = styled.div`
 export const StatsTitle = styled.h1`
   font-weight: var(--font-bold);
   font-size: 56px;
+
+  @media screen and (max-width: 640px) {
+    font-size: 42px;
+  }
 `;
 
 export const StatsSubtitle = styled.span`
   display: block;
   font-size: 24px;
   margin-top: -.5rem;
+  @media screen and (max-width: 640px) {
+    font-size: 20px;
+  }
 `;

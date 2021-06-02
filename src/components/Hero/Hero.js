@@ -8,6 +8,7 @@ import {
   HeroBtnLink,
   ImgWrapper,
   Img,
+  MobileImg,
 } from './HeroElements';
 import img from '../../img/heroprism.png';
 
@@ -16,6 +17,7 @@ const HeroSection = () => {
     <>
       <HeroContainer id="home">
         <HeroContent>
+        <ImgWrapper><MobileImg src={ img }/></ImgWrapper>
           <HeroTitle>
             Finally, a Way for Startup Investors
             to Find the Right Opportunities
