@@ -31,16 +31,17 @@ export const Img = styled.img`
 `;
 
 export const StatsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 100px;
-  margin-left: 125px;
-  margin-right: 125px;
-
-  @media screen and (max-width: 640px) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
     margin-right: 30px;
     margin-left: 30px;
+
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 125px;
+    margin-right: 125px;
   }
 `;
 

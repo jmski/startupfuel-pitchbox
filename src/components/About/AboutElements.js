@@ -2,20 +2,21 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
 export const AboutContainer = styled.div`
-	display: grid;
-	margin-left: 125px;
-	margin-right: 125px;
-
-	@media screen and (min-width: 768px) {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-
-	@media screen and (max-width: 640px) {
+		display: flex;
 		margin-right: 30px;
 		margin-left: 30px;
 		margin-bottom: 50px;
+
+	@media screen and (min-width: 768px) {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-left: 125px;
+		margin-right: 125px;
 	}
 `;
 
@@ -37,22 +38,20 @@ export const Bg = styled.img`
 `;
 
 export const AboutInfo = styled.div`
-position: relative;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: var(--mb-4);
-text-align: center;
-padding-right: 150px;
-font-weight: normal;
-
-@media screen and (min-width: 768px) {
-	text-align: left;
-}
-
-@media screen and (max-width: 640px) {
+	font-weight: normal;
 	padding-right: 0;
 	text-align: left;
-}
+
+
+	@media screen and (min-width: 768px) {
+	
+	}
+
+	@media screen and (min-width: 1024px) {
+		text-align: left;
+		position: relative;
+		margin-bottom: var(--mb-4);
+	}
 `;
 
 export const AboutTitle = styled.h2`
@@ -60,7 +59,7 @@ export const AboutTitle = styled.h2`
 	font-size: 38px;
 	font-weight: normal;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		font-size: 24px;
 	}
 `;
@@ -71,7 +70,7 @@ export const AboutSubtitle = styled.h3`
 	font-size: 27px;
 	margin-bottom: 5px;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		font-size: 18px;
 	}
 `;
@@ -97,30 +96,29 @@ export const AboutBtnLink = styled(LinkR)`
 		background: #2777a7;
 	}
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		font-size: 16px;
 		padding: .7rem .7rem;
 	}
 `;
 
 export const CardsContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	max-width: 500px;
-	column-gap: 20px;
-	row-gap: 20px;
-	margin-right: auto;
+	display: none;
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (min-width: 1024px) {
 		display: none;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 600px;
+		column-gap: 20px;
+		row-gap: 20px;
 	}
 `;
 
 export const Img = styled.img`
 	position: relative;
 	justify-content: center;
-	width: 200px;
-	height: 300px; // This affects image centering??
+	width: 100px;
+	height: 150px; // This affects image centering??
 `;
 
 export const ImgOne = styled(Img)`
@@ -144,8 +142,8 @@ export const ImgFive = styled(Img)`
 `;
 
 export const Card = styled.div`
-	width: 200px;
-	height: 300px;
+	width: 100px;
+	height: 150px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 2rem;

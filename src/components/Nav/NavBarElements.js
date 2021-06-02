@@ -15,8 +15,9 @@ export const NavContainer = styled.div`
 	transition: all 0.3s ease-in-out;
 	padding-top: 30px;
 
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 768px) {
 		height: calc(var(--header-height) + 30px);
+		padding-top: 15px;
 	}
 `;
 
@@ -29,7 +30,11 @@ export const Img = styled.img`
 	max-width: 400px;
 	margin-left: 125px;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 1024px) {
+		margin-left: 60px;
+	}
+
+	@media screen and (max-width: 768px) {
 		max-width: 220px;
 		margin-left: 30px;
 	}
@@ -38,7 +43,7 @@ export const Img = styled.img`
 export const NavBtn = styled.nav`
 	padding-top: 20px;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		padding-top: 5px;
 	}
 `;
@@ -62,7 +67,11 @@ export const NavBtnLink = styled(LinkR)`
 		color: ${({ scrollnav }) => (scrollnav ? 'var(--color-dar-neutral)' : 'var(--color-light-neutral)')};
 	}
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 1024px) {
+		margin-left: 60px;
+	}
+
+	@media screen and (max-width: 768px) {
 		margin-right: 30px;
 		font-size: 15px;
 		padding: .5rem .5rem;

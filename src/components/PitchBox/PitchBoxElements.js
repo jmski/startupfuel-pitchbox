@@ -9,7 +9,7 @@ export const Pb = styled.div`
   width: 40%;
   margin-left: 125px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     margin-left: 30px;
     width: 80%;
   }
@@ -19,7 +19,7 @@ export const PbTitle = styled.h2`
   font-weight: normal;
   font-size: 38px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
 		font-size: 24px;
 	}
 `;
@@ -33,7 +33,7 @@ export const PbDesc = styled.p`
 export const PbBtn = styled.div`
   margin-bottom: 150px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
   }
 `;
@@ -51,7 +51,7 @@ export const PbBtnLink = styled(LinkR)`
     background: #59019f;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
 		font-size: 16px;
 		padding: .7rem .7rem;
 	}
@@ -63,7 +63,7 @@ export const Fund = styled.div`
   margin-bottom: var(--mb-4);
   margin-left: 125px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     margin-left: 30px;
     grid-template-columns: 100%;
   }
@@ -77,7 +77,7 @@ export const FundTitle = styled.h4`
   margin-left: 125px;
   margin-right: 125px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
 		font-size: 24px;
     margin-left: 30px;
     margin-right: 30px;
@@ -90,15 +90,22 @@ export const FundBtn = styled(PbBtn)`
 `;
 
 export const FundDesc = styled.p`
-  margin-top: 150px;
+
+  margin-top: 20px;
+  text-align: left;
   padding-right: 50px;
   margin-bottom: 50px;
   font-weight: normal;
   font-size: 16px;
 
-  @media screen and (max-width: 640px) {
-    margin-top: 20px;
-    text-align: left;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 150px;
+    text-align: center;
   }
 `;
 
@@ -114,7 +121,7 @@ export const FundBtnLink = styled(LinkR)`
     background: #96031b;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
 		font-size: 16px;
 		padding: .7rem .7rem;
 	}
@@ -125,14 +132,15 @@ export const Wrap = styled.div`
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     text-align: left;
   }
 `;
 
 export const Img = styled.img`
-
-  @media screen and (max-width: 640px) {
-    width: 90%;
+  width: 95%;
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+    width: 100%;
   }
 `;
