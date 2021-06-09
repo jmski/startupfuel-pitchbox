@@ -9,6 +9,7 @@ import {
   StatsItem,
   StatsTitle,
   StatsSubtitle,
+  CarouselItem,
 
 } from './DividerElements';
 
@@ -48,8 +49,13 @@ export const Business = () => {
           infinite={true}
           arrows={false}
           draggable={false}
+          swipeable={false}
           autoPlay={true}
+          keyBoardControl={false}
+          partialVisible={false}
+          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed='3000'
+          // deviceType={this.props.deviceType}
           // centerMode={true}
         >
           <Img src={ img1 }/>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   PbContainer,
   Img,
@@ -8,12 +8,17 @@ import {
   PbDesc,
   PbBtn,
   PbBtnLink,
-
 } from './PitchBoxElements';
 
 import img from '../../img/svg/mobile-phone.svg';
 
 const PitchBoxSection = () => {
+  const [ isOpen, setIsOpen ] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       <PbContainer>
@@ -36,8 +41,8 @@ const PitchBoxSection = () => {
           <PbTitleMobile>
             Helping You Find Your Next Lucrative Deal
           </PbTitleMobile>
-          <PbBtn>
-            <PbBtnLink>Test the PitchBox App</PbBtnLink>
+          <PbBtn isOpen={ isOpen } toggle={ toggle }>
+            <PbBtnLink isOpen={ isOpen } toggle={ toggle }>Test the PitchBox App</PbBtnLink>
           </PbBtn>
         </PbContent>
       </PbContainer>

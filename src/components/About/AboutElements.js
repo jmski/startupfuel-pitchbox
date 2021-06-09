@@ -72,39 +72,66 @@ export const AboutBtnLink = styled(LinkR)`
 
 export const GridContainer = styled.div`
 	margin-top: 5vh;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	font-weight: normal;
-	text-align: center;
+	display: grid;
+	grid-template-columns: 100%;
 
-	@media screen and (min-width: 50rem) {
-		width: 100%;
-		column-gap: 3rem;
+	@media screen and (min-width: 35rem) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5vw;
 	}
 `;
 
-
 export const GridItem = styled.div`
-	display: flex;
-	flex-basis: calc(50% - 2rem);
-	justify-content: center;
-	flex-direction: column;
-	margin: auto;
-	margin-bottom: 5vh;
+	text-align: center;
 `;
 
-
 export const Img = styled.img`
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+
 `;
 
 export const GridSubtitle = styled.h3`
-	width: 100%;
+
 `;
 
 export const ItemDesc = styled.p`
-	width: 100%;
+	font-weight: normal;
 `;
+
+// export const GridContainer = styled.div`
+// 	margin-top: 5vh;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	flex-direction: row;
+// 	font-weight: normal;
+// 	text-align: center;
+
+// 	@media screen and (min-width: 50rem) {
+// 		width: 100%;
+// 		column-gap: 3rem;
+// 	}
+// `;
+
+
+// export const GridItem = styled.div`
+// 	display: flex;
+// 	flex-basis: calc(50% - 2rem);
+// 	justify-content: center;
+// 	flex-direction: column;
+// 	margin: auto;
+// 	margin-bottom: 5vh;
+// `;
+
+
+// export const Img = styled.img`
+// 	display: flex;
+// 	justify-content: center;
+// 	flex-direction: row;
+// `;
+
+// export const GridSubtitle = styled.h3`
+// 	width: 100%;
+// `;
+
+// export const ItemDesc = styled.p`
+// 	width: 100%;
+// `;

@@ -71,3 +71,7 @@ export const StatsSubtitle = styled.span`
     font-size: 1.5rem;
   }
 `;
+
+export const CarouselItem = styled.div`
+  padding: 3rem;
+`;
