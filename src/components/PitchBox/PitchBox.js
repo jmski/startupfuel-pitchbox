@@ -30,14 +30,14 @@ const PitchBoxSection = () => {
               <li>VC and Corporate Funds</li>
               <li>Startup Accelerators</li>
             </ul>
-            Scroll through just a few of the firms we have helped find startup investment
-            opportunities that align with their thesis.
+            Test out our app to see the types of business opportunities
+            you could match with before specifying your thesis
           </PbDesc>
           <PbTitleMobile>
             Helping You Find Your Next Lucrative Deal
           </PbTitleMobile>
           <PbBtn>
-            <PbBtnLink>View Active PitchBoxes</PbBtnLink>
+            <PbBtnLink>Test the PitchBox App</PbBtnLink>
           </PbBtn>
         </PbContent>
       </PbContainer>

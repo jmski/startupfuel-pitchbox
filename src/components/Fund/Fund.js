@@ -3,7 +3,7 @@ import React from 'react';
 import {
   FundContainer,
   FundTitle,
-  Fund,
+  FundContent,
   Wrap,
   FundDesc,
   FundBtn,
@@ -21,7 +21,7 @@ const FundSection = () => {
           Join us in making a global impact with diversity funding and participating
           in the Sustainable Development Goals initiative.
         </FundTitle>
-        <Fund>
+        <FundContent>
           <Wrap>
             <FundDesc>
               No longer will diverse or mission-driven startups be denied funding due to lack of access.
@@ -34,7 +34,7 @@ const FundSection = () => {
             </FundBtn>
           </Wrap>
           <Img src={ img } />
-        </Fund>
+        </FundContent>
       </FundContainer>
     </>
   )

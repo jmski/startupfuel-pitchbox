@@ -3,93 +3,98 @@ import { Link as LinkR } from 'react-router-dom';
 import { PbBtn } from '../PitchBox/PitchBoxElements';
 
 export const FundContainer = styled.div`
+  margin-left: 5vw;
+  margin-right: 5vw;
 
-`;
-
-export const Fund = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: var(--mb-4);
-  margin-left: 125px;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 30px;
-    grid-template-columns: 100%;
+  @media screen and (min-width: 35rem) {
+    margin-left: 9vw;
+    margin-right: 9vw;
   }
 `;
 
-export const FundTitle = styled.h4`
+export const FundContent = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 35rem) {
+    flex-direction: row;
+  }
+`;
+
+export const FundTitle = styled.h2`
   text-align: center;
   font-weight: normal;
-  font-size: 38px;
-  margin-bottom: var(--mb-4);
-  margin-left: 125px;
-  margin-right: 125px;
+  padding-top: 5vh;
+  font-size: 1.5rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 0;
+  @media screen and (min-width: 35rem) {
+    font-size: 2rem;
+
   }
 `;
 
 export const FundBtn = styled(PbBtn)`
   text-align: center;
-  
+
+  @media screen and (min-width: 35rem) {
+    text-align: left;
+  }
+
 `;
 
 export const FundDesc = styled.p`
-  margin-top: 20px;
+  margin-top: 2vh;
   text-align: left;
-  padding-right: 50px;
-  margin-bottom: 50px;
+  width: 100%;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;
-    text-align: center;
+  @media screen and (min-width: 35rem) {
+    padding-right: 3rem;
+    margin-top: 5vh;
+    text-align: left;
   }
 
-  @media screen and (min-width: 1024px) {
-    margin-top: 150px;
-    text-align: center;
+  @media screen and (min-width: 50rem) {
+    margin-top: 20vh;
   }
 `;
 
 export const FundBtnLink = styled(LinkR)`
+  border-radius: .5rem;
+  padding: .7rem .7rem;
+  font-weight: normal;
+  font-size: 1rem;
+  white-space: nowrap;
   background: var(--color-red);
   color: var(--color-white);
-  border-radius: .5rem;
-  padding: 1rem 1rem;
-  font-weight: normal;
-  font-size: 18px;
 
   &:hover {
     background: #96031b;
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-    padding: .7rem .7rem;
+  @media screen and (min-width: 35rem) {
+    padding: 1rem 1rem;
   }
 `;
 
 export const Wrap = styled.div`
-  align-content: center;
-  text-align: center;
-  justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 35rem) {
     text-align: left;
+    width: 50%;
   }
 `;
 
 export const Img = styled.img`
-  width: 95%;
-  @media screen and (min-width: 768px) {
-    max-width: 500px;
-    width: 100%;
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 35rem) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 50rem) {
+
   }
 `;
