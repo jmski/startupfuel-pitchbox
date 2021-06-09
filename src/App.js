@@ -9,8 +9,9 @@ import NavBar from './components/Nav/NavBar';
 import HeroSection from './components/Hero/Hero';
 import AboutSection from './components/About/About';
 import { Business } from './components/Divider/Divider';
-import PitchBoxSection from './components/PitchBox/PitchBox';
 import { Stats } from './components/Divider/Divider';
+import PitchBoxSection from './components/PitchBox/PitchBox';
+import FundSection from './components/Fund/Fund';
 import FooterSection from './components/Footer/Footer';
 
 
@@ -31,6 +32,7 @@ export default function App() {
         <AboutSection />
         <Stats />
         <PitchBoxSection />
+        <FundSection />
         <FooterSection />
         <GlobalStyles />
       </Router>

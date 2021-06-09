@@ -1,30 +1,27 @@
 import React from 'react';
 import { 
   PbContainer,
-  Pb,
+  Img,
+  PbContent,
   PbTitle,
+  PbTitleMobile,
   PbDesc,
   PbBtn,
   PbBtnLink,
-  Fund,
-  FundBtn,
-  FundTitle,
-  FundDesc,
-  FundBtnLink,
-  Wrap,
-  Img,
-
 
 } from './PitchBoxElements';
-import img from '../../img/SustainableDevelopmentGoals.gif';
+
+import img from '../../img/svg/mobile-phone.svg';
 
 const PitchBoxSection = () => {
   return (
     <>
-      <PbContainer id="contact">
-        <Pb>
+      <PbContainer>
+        <Img src={img} />
+        <PbContent>
           <PbTitle>
-            Helping You Find Your Next Lucrative Deal</PbTitle>
+            Helping You Find Your Next Lucrative Deal
+          </PbTitle>
           <PbDesc>
             We have simplified the scouting and due diligence process for various
             businesses including
@@ -36,34 +33,13 @@ const PitchBoxSection = () => {
             Scroll through just a few of the firms we have helped find startup investment
             opportunities that align with their thesis.
           </PbDesc>
+          <PbTitleMobile>
+            Helping You Find Your Next Lucrative Deal
+          </PbTitleMobile>
           <PbBtn>
             <PbBtnLink>View Active PitchBoxes</PbBtnLink>
           </PbBtn>
-        </Pb>
-        <FundTitle>
-          Join us in making a global impact with diversity funding and participating
-          in the Sustainable Development Goals initiative.
-        </FundTitle>
-        <Fund>
-          <Wrap>
-            <FundDesc>
-              No longer will diverse or mission-driven startups be denied funding due to lack of access.
-              <br/>
-              <br/>
-              When we open up the doors and allow everyone to contribute, there is no limit to what problems we can solve and challenges we can overcome.
-            </FundDesc>
-            <FundBtn>
-              <FundBtnLink>View All Funds</FundBtnLink>
-            </FundBtn>
-          </Wrap>
-          {/* <Wrap>
-            test
-          </Wrap>
-          <Video autoPlay loop muted src={ video } type='video/mp4' /> */}
-          <Img src={ img } />
-        </Fund>
-
-
+        </PbContent>
       </PbContainer>
     </>
   )

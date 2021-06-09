@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
 		--h1-font-size: 1.5rem;
 		--h2-font-size: 1.25rem;
 		--h3-font-size: 1rem;
-		--normal-font-size: 18px;
+		--normal-font-size: 16px;
 		--small-font-size: .813rem;
 		--smaller-font-size: .75rem;
 		--smallest-font-size: .5rem;
@@ -37,13 +37,16 @@ export const GlobalStyles = createGlobalStyle`
 		--mb-3: 1.5rem;
 		--mb-4: 2rem;
 		--mb-5: 2.5rem;
+		--ml-1: 5vh;
+		--ml-2: 9vh;
 
 		/*===== z index =====*/
 		--z-fixed: 100;
 	}
 
-	@media  screen and (min-width: 768px) {
+	@media  screen and (min-width: 35rem) {
 		:root {
+			/* --header-height: 130px; */
 			--h1-font-size: 2.25rem;
 			--h2-font-size: 1.5rem;
 			--h3-font-size: 1.25rem;
@@ -59,7 +62,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	html {
-
+		font-size: 16px;
 	}
 
 	h1, h2, h3 {

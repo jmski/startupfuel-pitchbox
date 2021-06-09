@@ -4,79 +4,81 @@ import { Link as LinkR } from 'react-router-dom';
 export const HeroContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-top: 100px;
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-bottom: 150px;
-	text-align: center;
+	justify-content: space-between;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
 	
-
-	@media screen and (min-width: 768px) {
-		margin-left: 75px;
-		margin-right: 75px;
+	@media screen and (min-width: 35rem) {
+		flex-direction: row-reverse;
+		margin-bottom: 15vh;
+		margin-top: 20vh;
 	}
 
-	@media screen and (min-width: 1024px) {
-		margin-left: 125px;
-		margin-right: 125px;
+	@media screen and (min-width: 50rem) {
+		margin-left: 9vw;
+		margin-right: 9vw;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 	}
 `;
 
 export const HeroContent = styled.div`
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	z-index: 5;
-
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: row;
-	}
 `;
 
 export const HeroTitle = styled.h1`
-	text-align: left;
+	text-align: center;
 	z-index: 10;
-	margin-bottom: 16px;
+	margin-bottom: .5rem;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 2rem;
+	line-height: 2.5rem;
 
-	@media screen and (max-width: 768px) {
-		font-size: 30px;
+	@media screen and (min-width: 35rem) {
+		text-align: left;
+		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 `;
 
 export const HeroDesc = styled.p`
-	text-align:left;
-	font-size: 24px;
-	line-height: 30px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 2rem;
 	font-weight: 400;
 
-	@media screen and (max-width: 768px) {
-		font-size: 18px;
+	@media screen and (min-width: 35rem) {
+		font-size: 1.5rem;
+		text-align:left;
+		width: 70%;
 	}
 
 `;
 
 export const HeroBtn = styled.div`
 	margin-top: 2rem;
-	position: absolute;
 `;
 
 export const HeroBtnLink = styled(LinkR)`
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 1rem;
 	border-radius: .5rem;
+	padding: .7rem;
 	background: var(--color-dark-neutral);
 	color: var(--color-white);
-	white-space: nowrap;
-	padding: 15px;
-	font-weight: normal;
-	font-size: 20px;
 
 	&:hover {
 		background: var(--color-darker-neutral);
 	}
 
-	@media screen and (max-width: 768px) {
-		font-size: 16px;
-		padding: .7rem .7rem;
+	@media screen and (min-width: 35rem) {
+		padding: 1rem;
 	}
 `;
 
@@ -85,22 +87,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-	width: 500px;
+	position: relative;
+	width: 100%;
 
-@media screen and (max-width: 1024px) {
-	width: 450px;
-}
-
-	@media screen and (max-width: 768px) {
-		display: none;
-	}
-`;
-
-export const MobileImg = styled(Img)`
-	display: none;
-
-	@media screen and (max-width: 768px) {
-		display: block;
-		width: 450px;
-	}
 `;

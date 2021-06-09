@@ -7,36 +7,18 @@ import {
   AboutDesc,
   AboutBtn,
   AboutBtnLink,
-  CardsContainer,
+  GridContainer,
+  GridItem,
+  GridSubtitle,
+  ItemDesc,
+  Img,
 
-
-  CardOne,
-  CardTwo,
-  CardThree,
-  CardFour,
-  CardFive,
-
-  ImgOne,
-  ImgTwo,
-  ImgThree,
-  ImgFour,
-  ImgFive,
-
-  CardOneOverlay,
-  CardTwoOverlay,
-  CardThreeOverlay,
-  CardFourOverlay,
-  CardFiveOverlay,
-
-  CardTitle,
-  CardDesc,
 } from './AboutElements';
 
-import img1 from '../../img/svg/undraw_filter.svg';
-import img2 from '../../img/svg/undraw_team.svg';
-import img3 from '../../img/svg/undraw_personal.svg';
-import img4 from '../../img/svg/undraw_reviews.svg';
-import img5 from '../../img/svg/undraw_target.svg';
+import img1 from '../../img/svg/team-collab.svg';
+import img2 from '../../img/svg/filter-startup.svg';
+import img3 from '../../img/svg/custom-settings.svg';
+import img4 from '../../img/svg/target-marketing.svg';
 
 const AboutSection = () => {
   return (
@@ -60,72 +42,45 @@ const AboutSection = () => {
           </AboutBtn>
         </AboutInfo>
 
+        <GridContainer>
 
-        <CardsContainer>
+          <GridItem>
+            <Img src={img1} />
+            <GridSubtitle>Team Collaborations</GridSubtitle>
+            <ItemDesc>
+              Your entire team gets access to all the data to ensure
+              proper due diligence
+            </ItemDesc>
+          </GridItem>
 
-          <CardOne>
-            <ImgOne src={ img1 } />
-            <CardOneOverlay>
-              <CardTitle>
-                Filter Startups
-              </CardTitle>
-              <CardDesc>
-                Save time by filtering out deals that don't fit your thesis.
-              </CardDesc>
-            </CardOneOverlay>
-          </CardOne>
+          <GridItem>
+            <Img src={img2} />
+            <GridSubtitle>Filter Startups</GridSubtitle>
+            <ItemDesc>
+              Save time by filtering out deals that don't fit your thesis
+            </ItemDesc>
+          </GridItem>
 
-          <CardTwo>
-            <ImgTwo src={ img2 } />
-            <CardTwoOverlay>
-              <CardTitle>
-                Team Collaboration
-              </CardTitle>
-              <CardDesc>
-                Your entire team gets access to all the data to ensure proper due diligence.
-              </CardDesc> 
-            </CardTwoOverlay>
-          </CardTwo>
+          <GridItem>
+            <Img src={img3} />
+            <GridSubtitle>Customizable Settings</GridSubtitle>
+            <ItemDesc>
+              Create the solution you need including controlling
+              intake forms, reviewing criteria,team management,
+              and automating communication
+            </ItemDesc>
+          </GridItem>
 
-          <CardThree>
-            <ImgThree src={ img3 } />
-            <CardThreeOverlay>
-              <CardTitle>
-                Customizable Settings
-              </CardTitle>
-              <CardDesc>
-                Create the solution you need including controlling intake forms,
-                reviewing criteria, team management, and automating communication.
-              </CardDesc>
-            </CardThreeOverlay>
-          </CardThree>
+          <GridItem>
+            <Img src={img4} />
+            <GridSubtitle>Targeted Marketing</GridSubtitle>
+            <ItemDesc>
+              Find the ideal startups to promote your fund to
+              according to your thesis
+            </ItemDesc>
+          </GridItem>
 
-          <CardFour>
-            <ImgFour src={ img4 } />
-            <CardFourOverlay>
-              <CardTitle>
-                  Comprehensive Shortlist
-              </CardTitle>
-              <CardDesc>
-                Our state of the art review system reviews your list and finds the best
-                deals for your fund.
-              </CardDesc>
-            </CardFourOverlay>
-          </CardFour>
-
-          <CardFive>
-            <ImgFive src={ img5 } />
-            <CardFiveOverlay>
-              <CardTitle>
-                Targeted Marketing
-              </CardTitle>
-              <CardDesc>
-                Find the ideal startups to promote your fund to according to your thesis.
-              </CardDesc>
-            </CardFiveOverlay>
-          </CardFive>
-          
-        </CardsContainer>
+        </GridContainer>
 
       </AboutContainer>
     </>

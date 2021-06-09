@@ -2,39 +2,84 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
 export const PbContainer = styled.div`
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-light-neutral);
+  padding: 5vh;
+
+  @media screen and (min-width: 35rem) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 50rem) {
+    padding-left: 20vh;
+  }
+
 `; 
 
-export const Pb = styled.div`
-  width: 40%;
-  margin-left: 125px;
+export const Img = styled.img`
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (max-width: 768px) {
-    margin-left: 30px;
-    width: 80%;
+  @media screen and (min-width: 35rem) {
+    width: 50%;
+    max-width: 20rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+`;
+
+export const PbContent = styled.div`
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 35rem) {
+    width: 50%;
+    flex-direction: column;
   }
 `;
 
 export const PbTitle = styled.h2`
+  display: none;
   font-weight: normal;
-  font-size: 38px;
+  font-size: 1.5rem;
+  text-align: center;
 
-  @media screen and (max-width: 768px) {
-		font-size: 24px;
+  @media screen and (min-width: 35rem) {
+		font-size: 2rem;
+    text-align: left;
+    display: block;
 	}
+`;
+
+export const PbTitleMobile = styled(PbTitle)`
+  display: block;
+
+  @media screen and (min-width: 35rem) {
+    display: none;
+  }
 `;
 
 export const PbDesc = styled.p`
   font-weight: normal;
-  margin-bottom: var(--mb-5);
-  font-size: 16px;
+  font-size: 1rem;
+
+  @media screen and (min-width: 35rem) {
+    width: 80%;
+  }
 `;
 
 export const PbBtn = styled.div`
-  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 60px;
+  @media screen and (min-width: 35rem) {
+    margin-left: 0;
+    margin-top: 5vh;
+
   }
 `;
 
@@ -42,105 +87,17 @@ export const PbBtnLink = styled(LinkR)`
   background: var(--color-purple);
   color: var(--color-white);
   border-radius: .5rem;
-  padding: 1rem 1rem;
+  padding: .7rem .7rem;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1rem;
+  white-space: nowrap;
 
 
   &:hover {
     background: #59019f;
   }
 
-  @media screen and (max-width: 768px) {
-		font-size: 16px;
-		padding: .7rem .7rem;
+  @media screen and (min-width: 35rem) {
+		padding: 1rem 1rem;
 	}
-`;
-
-export const Fund = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: var(--mb-4);
-  margin-left: 125px;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 30px;
-    grid-template-columns: 100%;
-  }
-`;
-
-export const FundTitle = styled.h4`
-  text-align: center;
-  font-weight: normal;
-  font-size: 38px;
-  margin-bottom: var(--mb-4);
-  margin-left: 125px;
-  margin-right: 125px;
-
-  @media screen and (max-width: 768px) {
-		font-size: 24px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 0;
-	}
-`;
-
-export const FundBtn = styled(PbBtn)`
-  /* text-align: center; */
-`;
-
-export const FundDesc = styled.p`
-
-  margin-top: 20px;
-  text-align: left;
-  padding-right: 50px;
-  margin-bottom: 50px;
-  font-weight: normal;
-  font-size: 16px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;
-    text-align: center;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-top: 150px;
-    text-align: center;
-  }
-`;
-
-export const FundBtnLink = styled(LinkR)`
-  background: var(--color-red);
-  color: var(--color-white);
-  border-radius: .5rem;
-  padding: 1rem 1rem;
-  font-weight: normal;
-  font-size: 18px;
-
-  &:hover {
-    background: #96031b;
-  }
-
-  @media screen and (max-width: 768px) {
-		font-size: 16px;
-		padding: .7rem .7rem;
-	}
-`;
-
-export const Wrap = styled.div`
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    text-align: left;
-  }
-`;
-
-export const Img = styled.img`
-  width: 95%;
-  @media screen and (min-width: 768px) {
-    max-width: 500px;
-    width: 100%;
-  }
 `;

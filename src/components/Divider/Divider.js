@@ -23,11 +23,11 @@ const responsive = {
     items: 5
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1008 },
     items: 5
   },
   tablet: {
-    breakpoint: { max: 1024, min: 641 },
+    breakpoint: { max: 1007, min: 641 },
     items: 3
   },
   mobile: {
@@ -41,7 +41,7 @@ export const Business = () => {
     <>
       <BusinessContainer>
         <BusinessTitle>
-          Join the Movement and the Thousands of Companies Who are Using Us to Scale Their Business
+          See the venture companies who are using us to scale their business
         </BusinessTitle>
         <Carousel 
           responsive={responsive}

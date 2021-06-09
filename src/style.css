@@ -2,10 +2,11 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  --gradient-color-1: #ef008f;
-  --gradient-color-2: #6ec3f4;
-  --gradient-color-3: #7038ff;
-  --gradient-color-4: #ffba27;
+
+  --gradient-color-1: #e4a1c9;
+  --gradient-color-2: #aadbf7;
+  --gradient-color-3: #d4b1f5;
+  --gradient-color-4: #d6f0fc;
 
   z-index: 0;
 
