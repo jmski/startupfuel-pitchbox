@@ -11,6 +11,14 @@ export const BusinessContainer = styled.div`
   }
 `;
 
+export const CarouselWrap = styled.div`
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 59.375rem;
+  
+`;
+
 export const BusinessTitle = styled.h2` 
   text-align: center;
   margin-bottom: 1.5rem;
@@ -26,10 +34,19 @@ export const BusinessTitle = styled.h2`
 export const Img = styled.img`
   width: 8.75rem;
   height: auto;
-  margin-left: 1rem;
+  align-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
 
   @media screen and (min-width: 35rem) {
-    width: 8.75rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  @media screen and (min-width: 50rem) {
+    width: 6.75rem;
+    margin-left: 50vw;
+    margin-right: 50vw;
 
   }
 `;

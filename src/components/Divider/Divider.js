@@ -9,7 +9,7 @@ import {
   StatsItem,
   StatsTitle,
   StatsSubtitle,
-  CarouselItem,
+  CarouselWrap,
 
 } from './DividerElements';
 
@@ -44,29 +44,28 @@ export const Business = () => {
         <BusinessTitle>
           Trusted by many venture funds
         </BusinessTitle>
-        <Carousel 
-          responsive={responsive}
-          infinite={true}
-          arrows={false}
-          draggable={false}
-          swipeable={false}
-          autoPlay={true}
-          keyBoardControl={false}
-          partialVisible={false}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed='3000'
-          // deviceType={this.props.deviceType}
-          // centerMode={true}
-        >
-          <Img src={ img1 }/>
-          <Img src={ img2 }/>
-          <Img src={ img3 }/>
-          <Img src={ img4 }/>
-          <Img src={ img1 }/>
-          <Img src={ img2 }/>
-          <Img src={ img3 }/>
-          <Img src={ img4 }/>
-        </Carousel>
+        <CarouselWrap>
+          <Carousel
+            responsive={responsive}
+            infinite={true}
+            arrows={false}
+            draggable={false}
+            swipeable={false}
+            autoPlay={true}
+            keyBoardControl={false}
+            autoPlaySpeed='3000'
+            centerMode={false}
+          >
+            <Img src={ img1 }/>
+            <Img src={ img2 }/>
+            <Img src={ img3 }/>
+            <Img src={ img4 }/>
+            <Img src={ img1 }/>
+            <Img src={ img2 }/>
+            <Img src={ img3 }/>
+            <Img src={ img4 }/>
+          </Carousel>
+        </CarouselWrap>
       </BusinessContainer>
     </>
   )

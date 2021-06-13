@@ -28,6 +28,7 @@ const PitchBoxSection = () => {
       <PbContainer>
         <Wrap>
           <Img src={img} />
+          
           <PbContent>
             <PbTitle>
               Helping You Find Your Next Lucrative Deal

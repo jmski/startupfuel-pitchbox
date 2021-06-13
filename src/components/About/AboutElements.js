@@ -26,7 +26,7 @@ export const AboutInfo = styled.div`
 
 export const AboutTitle = styled.h2`
 	text-align: center;
-	margin-bottom: 3.125rem;
+	margin-bottom: 4vh; //3.125rem
 	font-size: 1.5rem;
 	font-weight: normal;
 	font-family: Merriweather;
@@ -55,7 +55,7 @@ export const AboutDesc = styled.p`
 `;
 
 export const AboutBtn = styled.div`
-	margin-top: 3.125rem;
+	margin-top: 7vh;  //3.125rem
 	text-align: center;
 `;
 
@@ -105,42 +105,3 @@ export const ItemDesc = styled.p`
 	font-weight: normal;
 	font-size: 1rem;
 `;
-
-// export const GridContainer = styled.div`
-// 	margin-top: 5vh;
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	flex-direction: row;
-// 	font-weight: normal;
-// 	text-align: center;
-
-// 	@media screen and (min-width: 50rem) {
-// 		width: 100%;
-// 		column-gap: 3rem;
-// 	}
-// `;
-
-
-// export const GridItem = styled.div`
-// 	display: flex;
-// 	flex-basis: calc(50% - 2rem);
-// 	justify-content: center;
-// 	flex-direction: column;
-// 	margin: auto;
-// 	margin-bottom: 5vh;
-// `;
-
-
-// export const Img = styled.img`
-// 	display: flex;
-// 	justify-content: center;
-// 	flex-direction: row;
-// `;
-
-// export const GridSubtitle = styled.h3`
-// 	width: 100%;
-// `;
-
-// export const ItemDesc = styled.p`
-// 	width: 100%;
-// `;
