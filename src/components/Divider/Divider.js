@@ -42,7 +42,7 @@ export const Business = () => {
     <>
       <BusinessContainer>
         <BusinessTitle>
-          See the venture companies who are using us to scale their business
+          Trusted by many venture funds
         </BusinessTitle>
         <Carousel 
           responsive={responsive}
@@ -84,7 +84,7 @@ export const Stats = () => {
 
         <StatsItem>
           <StatsTitle>$300M+</StatsTitle>
-          <StatsSubtitle>Assets Under Management</StatsSubtitle>
+          <StatsSubtitle>AUM</StatsSubtitle>
         </StatsItem>
 
         <StatsItem>
@@ -94,7 +94,7 @@ export const Stats = () => {
 
         <StatsItem>
           <StatsTitle>~10%</StatsTitle>
-          <StatsSubtitle>User Growth per Month</StatsSubtitle>
+          <StatsSubtitle>Monthly Growth</StatsSubtitle>
         </StatsItem>
 
       </StatsContainer>

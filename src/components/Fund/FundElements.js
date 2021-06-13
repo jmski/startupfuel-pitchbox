@@ -5,10 +5,12 @@ import { PbBtn } from '../PitchBox/PitchBoxElements';
 export const FundContainer = styled.div`
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-bottom: 5vw;
 
   @media screen and (min-width: 35rem) {
     margin-left: 9vw;
     margin-right: 9vw;
+    margin-bottom: 7.8125rem;
   }
 `;
 
@@ -22,13 +24,15 @@ export const FundContent = styled.div`
 `;
 
 export const FundTitle = styled.h2`
+  margin-top: 3.125rem;
+  margin-bottom: 1.8rem;
   text-align: center;
   font-weight: normal;
-  padding-top: 5vh;
   font-size: 1.5rem;
+  font-family: Merriweather;
 
   @media screen and (min-width: 35rem) {
-    font-size: 2rem;
+    font-size: 2.6rem;
 
   }
 `;
@@ -47,16 +51,18 @@ export const FundDesc = styled.p`
   text-align: left;
   width: 100%;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9375rem;
 
   @media screen and (min-width: 35rem) {
     padding-right: 3rem;
     margin-top: 5vh;
     text-align: left;
+    font-size: 1.25rem;
   }
 
   @media screen and (min-width: 50rem) {
     margin-top: 20vh;
+
   }
 `;
 
@@ -75,6 +81,7 @@ export const FundBtnLink = styled(LinkR)`
 
   @media screen and (min-width: 35rem) {
     padding: 1rem 1rem;
+    font-size: 1.125rem;
   }
 `;
 

@@ -65,7 +65,7 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: 16px;
 	}
 
-	h1, h2, h3 {
+	h1, h2, h3, h4 {
 		margin: 0;
 	}
 

@@ -10,17 +10,16 @@ import {
   Title,
   Link,
   PodcastContainer,
-  PodTitle,
+  Img,
   SocialWrapper,
   SocialLink,
   MobileFooterCopy,
 
 } from './FooterElements';
 import { FaTwitter, FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
-import { GiOfficeChair } from 'react-icons/gi';
 
 import img1 from '../../img/watermark-light.png';
-
+import img2 from '../../img/startup-legends.jpeg';
 
 const toggleHome = () => scroll.scrollToTop();
 
@@ -62,10 +61,7 @@ const FooterSection = ( toggle ) => {
           <Wrapper>
             <Title>Listen to our podcast on Spotify</Title>
               <PodcastContainer>
-                <PodTitle>
-                  Startup Legends
-                </PodTitle>      
-                <GiOfficeChair />      
+                <Img src={img2} />
               </PodcastContainer>
           </Wrapper>
 

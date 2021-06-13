@@ -13,7 +13,7 @@ import {
 
 import img from '../../img/SustainableDevelopmentGoals.gif';
 
-const FundSection = () => {
+const FundSection = ( toggle ) => {
   return (
     <>
       <FundContainer>

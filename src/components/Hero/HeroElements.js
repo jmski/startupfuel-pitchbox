@@ -8,19 +8,18 @@ export const HeroContainer = styled.div`
 	margin-left: 5vw;
 	margin-right: 5vw;
 	margin-top: 10vh;
-	margin-bottom: 20vh;
+	margin-bottom: 4.6875rem;
 	
 	@media screen and (min-width: 35rem) {
 		flex-direction: row-reverse;
 		margin-bottom: 15vh;
-		margin-top: 20vh;
 	}
 
 	@media screen and (min-width: 50rem) {
 		margin-left: 9vw;
 		margin-right: 9vw;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
+		margin-top: 9.375rem;
+		margin-bottom: 7.8125rem;
 	}
 `;
 
@@ -38,10 +37,11 @@ export const HeroTitle = styled.h1`
 	font-weight: normal;
 	font-size: 2rem;
 	line-height: 2.5rem;
+	font-family: Merriweather;
 
 	@media screen and (min-width: 35rem) {
 		text-align: left;
-		font-size: 2.5rem;
+		font-size: 3rem;
 		line-height: 3rem;
 	}
 `;
@@ -49,7 +49,7 @@ export const HeroTitle = styled.h1`
 export const HeroDesc = styled.p`
 	text-align: center;
 	font-size: 1rem;
-	line-height: 2rem;
+	line-height: 1.5rem;
 	font-weight: 400;
 
 	@media screen and (min-width: 35rem) {
@@ -61,7 +61,7 @@ export const HeroDesc = styled.p`
 `;
 
 export const HeroBtn = styled.div`
-	margin-top: 2rem;
+	margin-top: 3.125rem;
 `;
 
 export const HeroBtnLink = styled(LinkR)`
@@ -79,6 +79,7 @@ export const HeroBtnLink = styled(LinkR)`
 
 	@media screen and (min-width: 35rem) {
 		padding: 1rem;
+		font-size: 1.125rem;
 	}
 `;
 

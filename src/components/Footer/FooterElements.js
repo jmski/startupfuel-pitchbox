@@ -34,6 +34,7 @@ export const Wrapper = styled.div`
   width: 100%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
     margin-left: 0;
@@ -52,9 +53,13 @@ export const FooterLogo = styled.a`
 `;
 
 export const LogoImg = styled.img`
-  margin-top: 15px;
+  margin-top: 3.125rem;
   width: 100%;
   max-width: 200px;
+
+  @media screen and (min-width: 35rem) {
+    margin-top: 0;
+  }
 `;
 
 export const FooterCopy = styled.span`
@@ -92,9 +97,8 @@ export const PodcastContainer = styled.div`
   margin-right: auto;
 `;
 
-export const PodTitle = styled.h4`
-  font-size: 15px;
-  text-align: center;
+export const Img = styled.img`
+  width: 5rem;
 `;
 
 export const SocialWrapper = styled(Wrapper)`
@@ -105,14 +109,9 @@ export const SocialWrapper = styled(Wrapper)`
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    margin-top: -20px;
-  }
-
-  @media screen and (min-width: 1024px) {
-
-}
+  @media screen and (min-width: 50rem) {
+    margin-top: 2rem;
+} 
 `;
 
 

@@ -7,8 +7,9 @@ import {
 } from './LightBoxElements';
 
 import { FaTimes } from 'react-icons/fa';
+import img from '../../img/svg/mobile-phone.svg';
 
-const LightBox = () => {
+const LightBox = ( isOpen, toggle ) => {
   return (
     <>
       <ModelContainer>

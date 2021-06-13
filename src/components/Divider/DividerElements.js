@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BusinessContainer = styled.div`
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-bottom: 20vh;
+  margin-bottom: 7.8125rem;
 
   @media screen and (min-width: 50rem) {
     margin-left: 9vw;
@@ -13,7 +13,7 @@ export const BusinessContainer = styled.div`
 
 export const BusinessTitle = styled.h2` 
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 1.5rem;
   font-weight: normal; 
   font-size: 1.5rem;
   line-height: 2rem;
@@ -24,12 +24,12 @@ export const BusinessTitle = styled.h2`
 `;
 
 export const Img = styled.img`
-  width: 12.5rem;
+  width: 8.75rem;
   height: auto;
-  margin: 1rem;
+  margin-left: 1rem;
 
   @media screen and (min-width: 35rem) {
-    width: 10rem;
+    width: 8.75rem;
 
   }
 `;
@@ -41,6 +41,7 @@ export const StatsContainer = styled.div`
   margin-bottom: 15vh;
   margin-right: 5vw;
   margin-left: 5vw;
+  row-gap: 2.25rem;
 
   @media screen and (min-width: 50rem) {
     grid-template-columns: repeat(4, 1fr);
@@ -55,10 +56,10 @@ export const StatsItem = styled.div`
 
 export const StatsTitle = styled.h1`
   font-weight: var(--font-bold);
-  font-size: 3rem;
+  font-size: 2.25rem;
 
   @media screen and (min-width: 50rem) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 `;
 
@@ -66,12 +67,9 @@ export const StatsSubtitle = styled.span`
   display: block;
   font-size: 1rem;
   margin-top: -.5rem;
+  font-weight: normal;
 
   @media screen and (min-width: 50rem) {
     font-size: 1.5rem;
   }
-`;
-
-export const CarouselItem = styled.div`
-  padding: 3rem;
 `;
