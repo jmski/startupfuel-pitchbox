@@ -33,7 +33,9 @@ const FundSection = () => {
               <FundBtnLink
                 to="//www.startupfuel.com/explore"
                 target="_blank"
-              >View All Funds</FundBtnLink>
+              >
+                View All Funds
+              </FundBtnLink>
             </FundBtn>
           </Wrap>
           <Img src={ img } />

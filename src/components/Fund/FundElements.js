@@ -37,8 +37,14 @@ export const FundTitle = styled.h2`
   }
 `;
 
-export const FundBtn = styled(PbBtn)`
+export const FundBtn = styled.button`
+  background: none;
   text-align: center;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 
   @media screen and (min-width: 35rem) {
     text-align: left;

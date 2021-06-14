@@ -59,6 +59,7 @@ export const GlobalStyles = createGlobalStyle`
 	/*===== BASE =====*/
 	*, ::before, ::after{
 		box-sizing: border-box;
+		border: 0;
 	}
 
 	html {
