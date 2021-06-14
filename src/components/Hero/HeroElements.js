@@ -90,5 +90,6 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
 	position: relative;
 	width: 100%;
+	display: none;
 
 `;

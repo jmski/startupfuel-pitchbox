@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactSVG } from 'react-svg';
 import {
   AboutContainer,
   AboutInfo,
@@ -15,10 +16,10 @@ import {
 
 } from './AboutElements';
 
-import img1 from '../../img/svg/team-collab.svg';
-import img2 from '../../img/svg/filter-startup.svg';
-import img3 from '../../img/svg/custom-settings.svg';
-import img4 from '../../img/svg/target-marketing.svg';
+import img1 from '../../img/svg/Teamwork.svg';
+import img2 from '../../img/svg/FilterStartups.svg';
+import img3 from '../../img/svg/Customizable-Settings.svg';
+import img4 from '../../img/svg/TargetedMarketing.svg';
 
 const AboutSection = () => {
   return (
@@ -45,7 +46,7 @@ const AboutSection = () => {
         <GridContainer>
 
           <GridItem>
-            <Img src={img1} />
+            <object type="image/svg+xml" max-width="350px" height="255px" data={img1}></object>
             <GridSubtitle>Team Collaborations</GridSubtitle>
             <ItemDesc>
               Your entire team gets access to all the data to ensure
@@ -54,7 +55,7 @@ const AboutSection = () => {
           </GridItem>
 
           <GridItem>
-            <Img src={img2} />
+            <object type="image/svg+xml" max-width="350px" height="255px" data={img2}></object>
             <GridSubtitle>Filter Startups</GridSubtitle>
             <ItemDesc>
               Save time by filtering out deals that don't fit your thesis
@@ -62,7 +63,7 @@ const AboutSection = () => {
           </GridItem>
 
           <GridItem>
-            <Img src={img3} />
+            <object type="image/svg+xml" max-width="350px" height="255px" data={img3}></object>
             <GridSubtitle>Customizable Settings</GridSubtitle>
             <ItemDesc>
               Create the solution you need including controlling
@@ -72,7 +73,7 @@ const AboutSection = () => {
           </GridItem>
 
           <GridItem>
-            <Img src={img4} />
+            <object type="image/svg+xml" max-width="350px" height="255px" data={img4}></object>
             <GridSubtitle>Targeted Marketing</GridSubtitle>
             <ItemDesc>
               Find the ideal startups to promote your fund to
