@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactSVG } from 'react-svg';
+
 import {
   AboutContainer,
   AboutInfo,
@@ -12,7 +12,6 @@ import {
   GridItem,
   GridSubtitle,
   ItemDesc,
-  Img,
 
 } from './AboutElements';
 
@@ -38,7 +37,8 @@ const AboutSection = () => {
           </AboutDesc>
           <AboutBtn>
             <AboutBtnLink
-              to="/download"
+              to="//startupfuel.zohobookings.com/#/customer/pitchbox"
+              target="_blank"
             >Book Your Free Demo</AboutBtnLink>
           </AboutBtn>
         </AboutInfo>

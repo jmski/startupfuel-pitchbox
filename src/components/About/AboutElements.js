@@ -93,13 +93,6 @@ export const GridItem = styled.div`
 	margin-bottom: 3.125rem;
 `;
 
-export const Img = styled.img`
-	display: block;
-	margin-bottom: 1.5625rem;
-`;
-
-
-
 export const GridSubtitle = styled.h4`
 	font-size: 1.5rem;
 `;

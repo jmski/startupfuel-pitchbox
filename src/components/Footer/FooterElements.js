@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const Footer = styled.div`
   background: var(--color-dark-neutral);
@@ -80,7 +81,7 @@ export const Link = styled.a`
   font-weight: normal;
 `;
 
-export const PodcastContainer = styled.div`
+export const PodcastContainer = styled(LinkR)`
   width: 6.75rem;
   height: 7.25rem;
   border-radius: 1rem;

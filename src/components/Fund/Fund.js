@@ -13,7 +13,7 @@ import {
 
 import img from '../../img/SustainableDevelopmentGoals.gif';
 
-const FundSection = ( toggle ) => {
+const FundSection = () => {
   return (
     <>
       <FundContainer>
@@ -30,7 +30,10 @@ const FundSection = ( toggle ) => {
               When we open up the doors and allow everyone to contribute, there is no limit to what problems we can solve and challenges we can overcome.
             </FundDesc>
             <FundBtn>
-              <FundBtnLink>View All Funds</FundBtnLink>
+              <FundBtnLink
+                to="//www.startupfuel.com/explore"
+                target="_blank"
+              >View All Funds</FundBtnLink>
             </FundBtn>
           </Wrap>
           <Img src={ img } />

@@ -41,17 +41,20 @@ const FooterSection = ( toggle ) => {
           <Wrapper>
             <Title>About</Title>
             <Link
-              to="about"
+              to="//www.startupfuel.com"
+              target="_blank"
             >
               About StartupFuel
             </Link>
             <Link
-              to="home"
+              to="//www.startupfuel.com/terms_conditions"
+              target="_blank"
             >
               Terms of Use
             </Link>
             <Link
-              to="about"
+              to="//www.startupfuel.com/privacy_policy"
+              target="_blank"
             >
               Privacy Policy
             </Link>
@@ -60,7 +63,10 @@ const FooterSection = ( toggle ) => {
 
           <Wrapper>
             <Title>Listen to our podcast on Spotify</Title>
-              <PodcastContainer>
+              <PodcastContainer
+                to="//open.spotify.com/show/26emscy85nHS93dBjnQDrX"
+                target="_blank"  
+              >
                 <Img src={img2} />
               </PodcastContainer>
           </Wrapper>

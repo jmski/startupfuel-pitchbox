@@ -43,7 +43,7 @@ const NavBar = () => {
 				<NavBtn>
 					<NavBtnLink 
 						scrollnav={ scrollnav }
-						to="//www.jmgelua.ca"
+						to="//startupfuel.zohobookings.com/#/customer/pitchbox"
 						target="_blank"
 					>
 						Book Free Demo

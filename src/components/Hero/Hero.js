@@ -29,7 +29,8 @@ const HeroSection = () => {
             Try our software for 14 days at no cost!
             <HeroBtn>
               <HeroBtnLink
-                to="/download"
+                to="//www.startupfuel.com/"
+                target="_blank"
               >
                 Let's Get Started</HeroBtnLink>
             </HeroBtn>
