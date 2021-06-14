@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Img } from '../PitchBox/PitchBoxElements';
+import { MdClose } from 'react-icons/md';
+
 
 export const ModelContainer = styled.div`
 position: fixed;
@@ -28,7 +30,7 @@ export const ModelImg = styled(Img)`
 
 `;
 
-export const CloseBtn = styled.button`
+export const CloseBtn = styled(MdClose)`
 color: var(--color-light-neutral);
 position: absolute;
 top: 1rem;

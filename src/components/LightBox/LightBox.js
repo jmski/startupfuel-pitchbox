@@ -6,22 +6,20 @@ import {
   CloseBtn,
 } from './LightBoxElements';
 
-import { FaTimes } from 'react-icons/fa';
 import img from '../../img/svg/mobile-phone.svg';
 
-const LightBox = ( isOpen, toggle ) => {
-  return (
+const LightBox = ({ isOpen, setIsOpen }) => {
+  return(
     <>
-      <ModelContainer>
-        <ModelContent>
-          <CloseBtn isOpen ={ isOpen } toggle={ toggle }><FaTimes/></CloseBtn>
-          <ModelImg src={img} />
-        </ModelContent>
+    <ModelContainer isOpen={isOpen}>
+      <ModelContent>
+        <CloseBtn onClick={() => setIsOpen (prev => !prev)} />
+        <ModelImg src={img} />
+      </ModelContent>
 
-
-      </ModelContainer>
+    </ModelContainer>
     </>
   )
 }
 
-export default LightBox
+export default LightBox;

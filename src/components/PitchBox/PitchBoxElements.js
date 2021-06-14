@@ -92,19 +92,7 @@ export const PbDesc = styled.p`
   }
 `;
 
-export const PbBtn = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
-
-  @media screen and (min-width: 35rem) {
-    margin-left: 0;
-
-  }
-`;
-
-export const PbBtnLink = styled(LinkR)`
+export const PbBtn = styled.button`
   background: var(--color-purple);
   color: var(--color-white);
   border-radius: .5rem;
@@ -113,13 +101,40 @@ export const PbBtnLink = styled(LinkR)`
   font-size: 1rem;
   white-space: nowrap;
   font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+
 
   &:hover {
     background: #59019f;
   }
 
   @media screen and (min-width: 35rem) {
-		padding: 1rem 1rem;
+    margin-left: 0;
+    padding: 1rem 1rem;
     font-size: 1.125rem;
-	}
+
+  }
 `;
+
+// export const PbBtnLink = styled.button`
+//   background: var(--color-purple);
+//   color: var(--color-white);
+//   border-radius: .5rem;
+//   padding: .7rem .7rem;
+//   font-weight: normal;
+//   font-size: 1rem;
+//   white-space: nowrap;
+//   font-style: italic;
+
+//   &:hover {
+//     background: #59019f;
+//   }
+
+//   @media screen and (min-width: 35rem) {
+// 		padding: 1rem 1rem;
+//     font-size: 1.125rem;
+// 	}
+// `;
