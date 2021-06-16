@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
-import { PbBtn } from '../PitchBox/PitchBoxElements';
 
 export const FundContainer = styled.div`
   margin-left: 5vw;

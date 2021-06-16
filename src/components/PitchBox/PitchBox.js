@@ -9,10 +9,17 @@ import {
   PbTitleMobile,
   PbDesc,
   PbBtn,
+  ItemWrap,
+  Item,
+  ItemImg,
+  ItemSubtitle,
 
 } from './PitchBoxElements';
 
-import img from '../../img/svg/mobile-phone.svg';
+import img1 from '../../img/svg/mobile-phone.svg';
+import img2 from '../../img/svg/impact-based-angel-networks.svg';
+import img3 from '../../img/svg/vc-corporate-funds.svg';
+import img4 from '../../img/svg/startup-accel.svg';
 
 const PitchBoxSection = () => {
   const [ isOpen, setIsOpen ] = useState(false)
@@ -21,7 +28,7 @@ const PitchBoxSection = () => {
     <>
       <PbContainer>
         <Wrap>
-          <Img src={img} />
+          <Img src={img1} />
           
           <PbContent>
             <PbTitle>
@@ -30,11 +37,30 @@ const PitchBoxSection = () => {
             <PbDesc>
               We have simplified the scouting and due diligence process for various
               businesses including
-              <ul>
-                <li>Impact Based Angel Networks</li>
-                <li>VC and Corporate Funds</li>
-                <li>Startup Accelerators</li>
-              </ul>
+              <ItemWrap>
+
+                <Item>
+                  <ItemImg src={img2}/>
+                  <ItemSubtitle>
+                    Impact Based Angel Networks
+                  </ItemSubtitle>
+                </Item>
+
+                <Item>
+                  <ItemImg src={img3}/>
+                  <ItemSubtitle>
+                    VC and Corporate Funds
+                  </ItemSubtitle>
+                </Item>
+
+                <Item>
+                  <ItemImg src={img4}/>
+                  <ItemSubtitle>
+                    Startup Accelerators
+                  </ItemSubtitle>
+                </Item>
+
+              </ItemWrap>
               Test out our app to see the types of business opportunities
               you could match with before specifying your thesis
             </PbDesc>

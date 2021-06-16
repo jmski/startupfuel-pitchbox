@@ -3,14 +3,14 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const Footer = styled.div`
   background: var(--color-dark-neutral);
-  height: 80vh;
+  height: 100vh;
 
   @media screen and (min-width: 35rem) {
-    height: 40vh;
+    height: 80vh;
   }
 
   @media screen and (min-width: 50rem) {
-    height: 30vh;
+    height: 40vh;
   }
 `;
 
@@ -73,7 +73,7 @@ export const Title = styled.h4`
   margin-bottom: .9375rem;
 `;
 
-export const Link = styled.a`
+export const Link = styled(LinkR)`
   color: var(--color-light-neutral);
   font-size: .9375rem;
   margin-bottom: .9375rem;

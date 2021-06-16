@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
 
 export const PbContainer = styled.div`
   background: var(--color-light-neutral);
@@ -86,7 +85,7 @@ export const PbDesc = styled.p`
   font-size: 0.9375rem;
   margin-bottom: 3.125rem;
 
-  @media screen and (min-width: 35rem) {
+  @media screen and (min-width: 50rem) {
     width: 80%;
     font-size: 1.25rem;
   }
@@ -111,30 +110,52 @@ export const PbBtn = styled.button`
     background: #59019f;
   }
 
-  @media screen and (min-width: 35rem) {
+  @media screen and (min-width: 50rem) {
     margin-left: 0;
     padding: 1rem 1rem;
     font-size: 1.125rem;
+    margin-top: 0;
 
   }
 `;
 
-// export const PbBtnLink = styled.button`
-//   background: var(--color-purple);
-//   color: var(--color-white);
-//   border-radius: .5rem;
-//   padding: .7rem .7rem;
-//   font-weight: normal;
-//   font-size: 1rem;
-//   white-space: nowrap;
-//   font-style: italic;
+export const ItemWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+`;
 
-//   &:hover {
-//     background: #59019f;
-//   }
+export const Item = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 3.125rem;
+  width: 100%;
+`;
 
-//   @media screen and (min-width: 35rem) {
-// 		padding: 1rem 1rem;
-//     font-size: 1.125rem;
-// 	}
-// `;
+export const ItemImg = styled.img`
+  margin-left: auto;
+  margin-right:auto;
+  width: 4.162rem;
+  height: 4.246rem;
+
+  @media screen and (min-width: 50rem) {
+    width: 6.25rem;
+    height: 6.125rem;
+  }
+`;
+
+export const ItemSubtitle = styled.h4`
+  margin-top: 1.75rem;
+  display: block;
+  font-size: .9375rem;
+  font-weight: normal;
+
+
+  @media screen and (min-width: 50rem) {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+`;

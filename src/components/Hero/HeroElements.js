@@ -50,10 +50,10 @@ export const HeroDesc = styled.p`
 	text-align: center;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	font-weight: 400;
+	font-weight: 300;
 
 	@media screen and (min-width: 35rem) {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		text-align:left;
 		width: 70%;
 	}
