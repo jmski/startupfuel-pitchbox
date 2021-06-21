@@ -12,15 +12,15 @@ export const HeroContainer = styled.div`
 	
 	@media screen and (min-width: 35rem) {
 		flex-direction: row-reverse;
-		justify-content: center;
-		margin-bottom: 15vh;
+		justify-content: space-evenly;
+		margin-bottom: 7.1123rem;
 	}
 
 	@media screen and (min-width: 50rem) {
 		margin-left: 9vw;
 		margin-right: 9vw;
 		margin-top: 9.375rem;
-		margin-bottom: 7.8125rem;
+		margin-bottom: -3.1235rem;
 	}
 `;
 
@@ -85,14 +85,25 @@ export const HeroBtnLink = styled(LinkR)`
 `;
 
 export const ImgWrapper = styled.div`
+	display: flex;
 	z-index: 10;
+	width: 100%;
+	margin-top: -10rem;
 
 	@media screen and (min-width: 35rem) {
-		margin-top: 100%;
+		width: 100%;
+	}
+`;
+
+export const Img = styled.div`
+	width: 100%;
+
+	@media screen and (min-width: 35rem) {
+		width: 100%;
 	}
 
 	@media screen and (min-width: 50rem) {
-		margin-top: -20vh;
 		width: 100%;
+		max-width: 40rem;
 	}
 `;

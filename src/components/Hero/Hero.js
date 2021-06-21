@@ -16,7 +16,9 @@ const HeroSection = () => {
     <>
       <HeroContainer id="home">
         <ImgWrapper>
-          <object type="image/svg+xml" data={img}></object>
+          <Img>
+            <object type="image/svg+xml" data={img}></object>
+          </Img>
         </ImgWrapper>
 
         <HeroContent>
