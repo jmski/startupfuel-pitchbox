@@ -12,6 +12,7 @@ export const HeroContainer = styled.div`
 	
 	@media screen and (min-width: 35rem) {
 		flex-direction: row-reverse;
+		justify-content: center;
 		margin-bottom: 15vh;
 	}
 
@@ -85,11 +86,13 @@ export const HeroBtnLink = styled(LinkR)`
 
 export const ImgWrapper = styled.div`
 	z-index: 10;
-`;
 
-export const Img = styled.img`
-	position: relative;
-	width: 100%;
-	display: none;
+	@media screen and (min-width: 35rem) {
+		margin-top: 100%;
+	}
 
+	@media screen and (min-width: 50rem) {
+		margin-top: -20vh;
+		width: 100%;
+	}
 `;

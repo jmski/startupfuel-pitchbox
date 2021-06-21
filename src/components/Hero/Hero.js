@@ -9,13 +9,15 @@ import {
   ImgWrapper,
   Img,
 } from './HeroElements';
-import img from '../../img/heroprism.png';
+import img from '../../img/svg/Process.svg';
 
 const HeroSection = () => {
   return (
     <>
       <HeroContainer id="home">
-        <ImgWrapper><Img src={ img }/></ImgWrapper>
+        <ImgWrapper>
+          <object type="image/svg+xml" data={img}></object>
+        </ImgWrapper>
 
         <HeroContent>
           <HeroTitle>
