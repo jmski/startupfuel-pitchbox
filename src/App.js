@@ -28,9 +28,9 @@ export default function App() {
         <canvas id="gradient-canvas" />
         <NavBar />
         <HeroSection />
+        <Stats />
         <Business />
         <AboutSection />
-        <Stats />
         <PitchBoxSection />
         <FundSection />
         <FooterSection />

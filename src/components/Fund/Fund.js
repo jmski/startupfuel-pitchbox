@@ -3,6 +3,7 @@ import React from 'react';
 import {
   FundContainer,
   FundTitle,
+  Quote,
   FundContent,
   Wrap,
   FundDesc,
@@ -11,23 +12,31 @@ import {
   Img,
 } from './FundElements';
 
-import img from '../../img/SustainableDevelopmentGoals.gif';
+import img1 from '../../img/svg/Diversity-Icons.svg';
+import img2 from '../../img/svg/Diversity-Image.svg';
 
 const FundSection = () => {
   return (
     <>
       <FundContainer>
         <FundTitle>
-          Join us in making a global impact with diversity funding and participating
-          in the Sustainable Development Goals initiative.
+          Introducing People, Planet and Profit into Venture Capital
+          <Quote>
+            <p>
+              "Diversity drives innovation.
+              When we limit who can contribute,
+              we in turn limit what problewms we can solve."
+            </p>
+            <figcaption>- Telle Whitney</figcaption>
+          </Quote>
         </FundTitle>
         <FundContent>
           <Wrap>
+            <Img src={ img1 } />
             <FundDesc>
-              No longer will diverse or mission-driven startups be denied funding due to lack of access.
-              <br/>
-              <br/>
-              When we open up the doors and allow everyone to contribute, there is no limit to what problems we can solve and challenges we can overcome.
+              Find underrespresented, overlooked founders building
+              extraordinary, distruptive solutions to humanities
+              problems.
             </FundDesc>
             <FundBtn>
               <FundBtnLink
@@ -38,7 +47,7 @@ const FundSection = () => {
               </FundBtnLink>
             </FundBtn>
           </Wrap>
-          <Img src={ img } />
+          <Img src={ img2 } />
         </FundContent>
       </FundContainer>
     </>

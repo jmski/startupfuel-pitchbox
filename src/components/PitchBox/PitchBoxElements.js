@@ -56,10 +56,10 @@ export const PbContent = styled.div`
 
 export const PbTitle = styled.h2`
   display: none;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1.5rem;
   text-align: center;
-  font-family: Merriweather;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   @media screen and (min-width: 35rem) {
 		font-size: 2.6rem;

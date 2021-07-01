@@ -32,31 +32,31 @@ const PitchBoxSection = () => {
           
           <PbContent>
             <PbTitle>
-              Helping You Find Your Next Lucrative Deal
+              Helping You Find Your Next Unicorn
             </PbTitle>
             <PbDesc>
               We have simplified the scouting and due diligence process for various
-              businesses including
+              for various all startup funds including:
               <ItemWrap>
 
                 <Item>
                   <ItemImg src={img2}/>
                   <ItemSubtitle>
-                    Impact Based Angel Networks
+                    Angel Networks
                   </ItemSubtitle>
                 </Item>
 
                 <Item>
                   <ItemImg src={img3}/>
                   <ItemSubtitle>
-                    VC and Corporate Funds
+                    VC and Corporate Innovation Funds
                   </ItemSubtitle>
                 </Item>
 
                 <Item>
                   <ItemImg src={img4}/>
                   <ItemSubtitle>
-                    Startup Accelerators
+                    Accelerators & Incubators
                   </ItemSubtitle>
                 </Item>
 

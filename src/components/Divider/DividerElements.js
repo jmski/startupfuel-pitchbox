@@ -50,15 +50,21 @@ export const Img = styled.img`
 
   }
 `;
+export const Container = styled.div`
+  background: #202131;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+`;
 
-
-export const StatsContainer = styled.div`
+export const Section = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 15vh;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
   margin-right: 5vw;
   margin-left: 5vw;
   row-gap: 2.25rem;
+  color: var(--color-white);
 
   @media screen and (min-width: 50rem) {
     grid-template-columns: repeat(4, 1fr);
@@ -83,8 +89,8 @@ export const StatsTitle = styled.h1`
 export const StatsSubtitle = styled.span`
   display: block;
   font-size: 1rem;
-  margin-top: -.5rem;
-  font-weight: normal;
+  margin-top: -1.5rem;
+  font-weight: 300;
 
   @media screen and (min-width: 50rem) {
     font-size: 1.5rem;

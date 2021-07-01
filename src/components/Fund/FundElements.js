@@ -28,12 +28,26 @@ export const FundTitle = styled.h2`
   text-align: center;
   font-weight: normal;
   font-size: 1.5rem;
-  font-family: Merriweather;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   @media screen and (min-width: 35rem) {
     font-size: 2.6rem;
 
   }
+`;
+
+export const Quote = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-size: 1.5rem;
+  max-width: 1000px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+& > figcaption {
+  float: right;
+  font-size: 1rem;
+}
 `;
 
 export const FundBtn = styled.button`
@@ -51,11 +65,11 @@ export const FundBtn = styled.button`
 
 `;
 
-export const FundDesc = styled.p`
+export const FundDesc = styled.div`
   margin-top: 2vh;
   text-align: left;
   width: 100%;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 0.9375rem;
 
   @media screen and (min-width: 35rem) {

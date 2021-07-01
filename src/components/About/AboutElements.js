@@ -29,7 +29,7 @@ export const AboutTitle = styled.h2`
 	margin-bottom: 4vh; //3.125rem
 	font-size: 1.5rem;
 	font-weight: normal;
-	font-family: Merriweather;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 	@media screen and (min-width: 35rem) {
 		font-size: 2.6rem;

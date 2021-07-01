@@ -5,7 +5,8 @@ import {
   BusinessContainer,
   BusinessTitle,
   Img,
-  StatsContainer,
+  Container,
+  Section,
   StatsItem,
   StatsTitle,
   StatsSubtitle,
@@ -42,7 +43,7 @@ export const Business = () => {
     <>
       <BusinessContainer>
         <BusinessTitle>
-          Trusted by many venture funds
+          Trusted by Top Venture Funds
         </BusinessTitle>
         <CarouselWrap>
           <Carousel
@@ -74,29 +75,31 @@ export const Business = () => {
 export const Stats = () => {
   return(
     <>
-      <StatsContainer>
+      <Container>
+        <Section>
 
-        <StatsItem>
-          <StatsTitle>250+</StatsTitle>
-          <StatsSubtitle>Funds/ Syndicates</StatsSubtitle>
-        </StatsItem>
+          <StatsItem>
+            <StatsTitle>2000+</StatsTitle>
+            <StatsSubtitle>Startup Deals</StatsSubtitle>
+          </StatsItem>
 
-        <StatsItem>
-          <StatsTitle>$300M+</StatsTitle>
-          <StatsSubtitle>AUM</StatsSubtitle>
-        </StatsItem>
+          <StatsItem>
+            <StatsTitle>50+</StatsTitle>
+            <StatsSubtitle>Funds/ Syndicates</StatsSubtitle>
+          </StatsItem>
 
-        <StatsItem>
-          <StatsTitle>2000+</StatsTitle>
-          <StatsSubtitle>Startups</StatsSubtitle>
-        </StatsItem>
+          <StatsItem>
+            <StatsTitle>36+</StatsTitle>
+            <StatsSubtitle>Industries</StatsSubtitle>
+          </StatsItem>
 
-        <StatsItem>
-          <StatsTitle>~10%</StatsTitle>
-          <StatsSubtitle>Monthly Growth</StatsSubtitle>
-        </StatsItem>
+          <StatsItem>
+            <StatsTitle>50+</StatsTitle>
+            <StatsSubtitle>Countries</StatsSubtitle>
+          </StatsItem>
 
-      </StatsContainer>
+        </Section>
+      </Container>
     </>
   )
 }

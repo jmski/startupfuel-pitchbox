@@ -28,12 +28,8 @@ const AboutSection = () => {
           <AboutSubtitle>Powered by StartupFuel</AboutSubtitle>
           <AboutTitle>What is the PitchBox?</AboutTitle>
           <AboutDesc>
-            PitchBox helps startup investors find innovative and impactful
-            investment opportunities. It also helps manage their deal flow
-            by organizing all of your startup pitches in one place. Our solution
-            provides your analysts with all the necessary information in one
-            easy-to-navigate dashboard. Now, your team can review all types of pitches
-            and make informed decisions based on the data available.
+            Pitchbox is an advanced software system that enpowers venture capital investors with data & intelligence.
+            It helps startup investors scout innovative and impactful investment opportunities.
           </AboutDesc>
           <AboutBtn>
             <AboutBtnLink
@@ -47,37 +43,37 @@ const AboutSection = () => {
 
           <GridItem>
             <object type="image/svg+xml" max-width="350px" height="255px" data={img1}></object>
-            <GridSubtitle>Team Collaborations</GridSubtitle>
+            <GridSubtitle>Enhanced Team Collaborations</GridSubtitle>
             <ItemDesc>
-              Your entire team gets access to all the data to ensure
-              proper due diligence
+              Your internal Team & external advisors get access
+              to all the data to ensure proper due diligence
             </ItemDesc>
           </GridItem>
 
           <GridItem>
             <object type="image/svg+xml" max-width="350px" height="255px" data={img2}></object>
-            <GridSubtitle>Filter Startups</GridSubtitle>
+            <GridSubtitle>Data Driven Deal Scouting</GridSubtitle>
             <ItemDesc>
-              Save time by filtering out deals that don't fit your thesis
+              Save time by filtering and organizing deals based
+              on thesis, impact and success probability
             </ItemDesc>
           </GridItem>
 
           <GridItem>
             <object type="image/svg+xml" max-width="350px" height="255px" data={img3}></object>
-            <GridSubtitle>Customizable Settings</GridSubtitle>
+            <GridSubtitle>Real-time Relationships & Deal Tracking</GridSubtitle>
             <ItemDesc>
-              Create the solution you need including controlling
-              intake forms, reviewing criteria,team management,
-              and automating communication
+              Invest in Lines, not Dots to build relationships and tracking
+              deals in real-time with founders
             </ItemDesc>
           </GridItem>
 
           <GridItem>
             <object type="image/svg+xml" max-width="350px" height="255px" data={img4}></object>
-            <GridSubtitle>Targeted Marketing</GridSubtitle>
+            <GridSubtitle>Dedicated Venture Capital Advisor</GridSubtitle>
             <ItemDesc>
-              Find the ideal startups to promote your fund to
-              according to your thesis
+              A trained and dedicated advisor walking you
+              through the end-to-end VC process
             </ItemDesc>
           </GridItem>
 
