@@ -16,6 +16,7 @@ export const FundContainer = styled.div`
 export const FundContent = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media screen and (min-width: 35rem) {
     flex-direction: row;
@@ -39,6 +40,7 @@ export const FundTitle = styled.h2`
 export const Quote = styled.div`
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
   font-style: italic;
   font-size: 1.5rem;
   max-width: 1000px;
@@ -79,10 +81,6 @@ export const FundDesc = styled.div`
     font-size: 1.25rem;
   }
 
-  @media screen and (min-width: 50rem) {
-    margin-top: 20vh;
-
-  }
 `;
 
 export const FundBtnLink = styled(LinkR)`
@@ -114,13 +112,4 @@ export const Wrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  height: auto;
-
-  @media screen and (min-width: 35rem) {
-    width: 50%;
-  }
-
-  @media screen and (min-width: 50rem) {
-
-  }
 `;

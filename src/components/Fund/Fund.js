@@ -25,7 +25,7 @@ const FundSection = () => {
             <p>
               "Diversity drives innovation.
               When we limit who can contribute,
-              we in turn limit what problewms we can solve."
+              we in turn limit what problems we can solve."
             </p>
             <figcaption>- Telle Whitney</figcaption>
           </Quote>
