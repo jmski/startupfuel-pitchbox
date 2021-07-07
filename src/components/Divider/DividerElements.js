@@ -57,20 +57,18 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  row-gap: 2.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   color: var(--color-white);
+  height: 14rem;
 
-  @media screen and (min-width: 50rem) {
-    grid-template-columns: repeat(4, 1fr);
-    margin-left: 9vw;
-    margin-right: 9vw;
+  @media screen and (max-width: 35rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+
 `;
 
 export const StatsItem = styled.div`
@@ -89,10 +87,10 @@ export const StatsTitle = styled.h1`
 export const StatsSubtitle = styled.span`
   display: block;
   font-size: 1rem;
-  margin-top: -1.5rem;
   font-weight: 300;
+  margin-top: -1.5rem;
 
-  @media screen and (min-width: 50rem) {
-    font-size: 1.5rem;
+  @media screen and (max-width: 35rem) {
+    margin-top: -1rem;
   }
 `;

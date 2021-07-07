@@ -111,5 +111,5 @@ export const Wrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 60%;
 `;

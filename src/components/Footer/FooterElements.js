@@ -5,12 +5,8 @@ export const Footer = styled.div`
   background: var(--color-dark-neutral);
   height: 20rem;
 
-  @media screen and (min-width: 35rem) {
+  @media screen and (max-width: 35rem) {
     height: 40rem;
-  }
-
-  @media screen and (min-width: 50rem) {
-    height: 20rem;
   }
 `;
 

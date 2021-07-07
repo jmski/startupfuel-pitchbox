@@ -7,7 +7,8 @@ import {
   HeroDesc,
   HeroBtn,
   HeroBtnLink,
-  ImgWrapper,
+  TopWrap,
+  BottomWrap,
   Img,
   EmailWrap,
   EmailInput,
@@ -20,9 +21,14 @@ const HeroSection = () => {
     <>
       <Hero>
         <Section>
+          <TopWrap>
+            <Img src={img} />
+          </TopWrap>
           <HeroContent>
             <HeroTitle>
-              A Better VC World
+              Data. Diversity.
+              <br/>
+              Diligence. Dealflow.
             </HeroTitle>
             <HeroDesc>
             <li>Instant access & connection to quality startup founders</li>
@@ -42,7 +48,9 @@ const HeroSection = () => {
                 Let's Get Started</HeroBtnLink>
             </EmailWrap>
           </HeroContent>
-          <Img src={img} />
+          <BottomWrap>
+            <Img src={img} />
+          </BottomWrap>
         </Section>
       </Hero>
     </>

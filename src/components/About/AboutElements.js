@@ -79,18 +79,19 @@ export const AboutBtnLink = styled(LinkR)`
 export const GridContainer = styled.div`
 	margin-top: 3.125rem;
 	display: grid;
-	grid-template-columns: 100%;
+	column-gap: 5vw;
+	row-gap: 3.125rem;
+	grid-template-columns: repeat(2, 1fr);
 
-	@media screen and (min-width: 35rem) {
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 5vw;
-		row-gap: 3.125rem;
+	@media screen and (max-width: 35rem) {
+		grid-template-columns: 100%;
 	}
 `;
 
 export const GridItem = styled.div`
 	text-align: center;
 	margin-bottom: 3.125rem;
+
 `;
 
 export const GridSubtitle = styled.h4`
