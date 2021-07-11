@@ -9,6 +9,7 @@ import {
   FundDesc,
   FundBtn,
   FundBtnLink,
+  IconImg,
   Img,
 } from './FundElements';
 
@@ -32,7 +33,7 @@ const FundSection = () => {
         </FundTitle>
         <FundContent>
           <Wrap>
-            <Img src={ img1 } />
+            <IconImg src={ img1 } />
             <FundDesc>
               Find underrespresented, overlooked founders building
               extraordinary, distruptive solutions to humanities

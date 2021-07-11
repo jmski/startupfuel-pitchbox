@@ -26,7 +26,7 @@ const AboutSection = () => {
       <AboutContainer id="about">
         <AboutInfo>
           <AboutSubtitle>Powered by StartupFuel</AboutSubtitle>
-          <AboutTitle>What is the PitchBox?</AboutTitle>
+          <AboutTitle>How does the PitchBox help you?</AboutTitle>
           <AboutDesc>
             Pitchbox is an advanced software system that enpowers venture capital investors with data & intelligence.
             It helps startup investors scout innovative and impactful investment opportunities.
@@ -61,7 +61,7 @@ const AboutSection = () => {
 
           <GridItem>
             <object type="image/svg+xml" max-width="350px" height="255px" data={img3}></object>
-            <GridSubtitle>Real-time Relationships & Deal Tracking</GridSubtitle>
+            <GridSubtitle>Build Relationships with Founders</GridSubtitle>
             <ItemDesc>
               Invest in Lines, not Dots to build relationships and tracking
               deals in real-time with founders

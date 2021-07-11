@@ -22,7 +22,7 @@ export const CarouselWrap = styled.div`
 export const BusinessTitle = styled.h2` 
   text-align: center;
   margin-bottom: 1.5rem;
-  font-weight: normal; 
+  font-weight: 700; 
   font-size: 1.5rem;
   line-height: 2rem;
 

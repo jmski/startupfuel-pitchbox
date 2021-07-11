@@ -99,7 +99,7 @@ export const PbBtn = styled.button`
   font-weight: normal;
   font-size: 1rem;
   white-space: nowrap;
-  font-style: italic;
+  /* font-style: italic; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.125rem;
