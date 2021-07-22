@@ -4,7 +4,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const Hero = styled.div`
 	margin-left: 5vw;
 	margin-right: 5vw;
-	margin-top: 10vh;
+	margin-top: 3rem;
 	margin-bottom: 4.6875rem;
 	
 	@media screen and (min-width: 35rem) {
@@ -54,10 +54,11 @@ export const HeroTitle = styled.h1`
 	z-index: 10;
 	text-align: left;
 	font-size: 3.125rem;
-	line-height: 6rem;
+	line-height: 4rem;
 	font-weight: 700;
 	text-shadow: .1rem .1rem .5rem #3e356e;
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
+	letter-spacing: .2rem;
 
 
 	@media screen and (max-width: 35rem) {

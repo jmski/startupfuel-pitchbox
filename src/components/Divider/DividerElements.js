@@ -62,7 +62,7 @@ export const Section = styled.div`
   align-items: center;
   flex-wrap: wrap;
   color: var(--color-white);
-  height: 10rem;
+  height: 10.438rem;
 
   @media screen and (max-width: 35rem) {
     display: grid;
@@ -86,11 +86,12 @@ export const StatsTitle = styled.h1`
 
 export const StatsSubtitle = styled.span`
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-top: -1.5rem;
 
   @media screen and (max-width: 35rem) {
     margin-top: -1rem;
+    font-size: 1rem;
   }
 `;

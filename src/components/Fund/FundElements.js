@@ -111,7 +111,8 @@ export const Wrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 60%;
+  width: 100%;
+  max-width: 45rem;
 `;
 
 export const IconImg = styled(Img)`
