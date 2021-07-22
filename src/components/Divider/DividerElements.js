@@ -62,7 +62,7 @@ export const Section = styled.div`
   align-items: center;
   flex-wrap: wrap;
   color: var(--color-white);
-  height: 14rem;
+  height: 10rem;
 
   @media screen and (max-width: 35rem) {
     display: grid;

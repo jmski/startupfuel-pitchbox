@@ -14,7 +14,7 @@ import {
   EmailInput,
 
 } from './HeroElements';
-import img from '../../img/Hero-Computer.png';
+import img from '../../img/svg/Computer-screen.svg';
 
 const HeroSection = () => {
   return (

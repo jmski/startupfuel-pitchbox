@@ -21,20 +21,31 @@ export const Hero = styled.div`
 `;
 
 export const Section = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+
+/* 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
 	direction: ltr;
 
 	@media screen and (max-width: 35rem) {
 		grid-template-columns: 100%;
-	}
+	} */
 
 `;
 
 export const HeroContent = styled.div`
 	display: block;
 	z-index: 5;
-	width: 100%;
+
+	@media screen and (max-width: 35rem) {
+		margin-top: 20rem;
+		margin-left: 2rem;
+	}
 `;
 
 export const HeroTitle = styled.h1`
@@ -42,7 +53,7 @@ export const HeroTitle = styled.h1`
 	color: var(--color-white);
 	z-index: 10;
 	text-align: left;
-	font-size: 5rem;
+	font-size: 3.125rem;
 	line-height: 6rem;
 	font-weight: 700;
 	text-shadow: .1rem .1rem .5rem #3e356e;
@@ -59,7 +70,7 @@ export const HeroTitle = styled.h1`
 export const HeroDesc = styled.ul`
 	color: var(--color-white);
 	text-align: left;
-	font-size: 1.438rem;
+	font-size: 1.25rem;
 	font-weight: 400;
 	margin-bottom: 4rem;
 	text-shadow: .1rem .1rem .5rem #3e356e;
@@ -83,6 +94,7 @@ export const HeroDesc = styled.ul`
 export const TopWrap = styled.div`
 	display: none;
 	z-index: 10;
+	position: absolute;
 
 	@media screen and (max-width: 35rem) {
 		display: block;
@@ -92,6 +104,9 @@ export const TopWrap = styled.div`
 export const BottomWrap = styled.div`
 	display: block;
 	z-index: 10;
+	/* position: absolute;
+	right: 0;
+	top: 0; */
 
 	@media screen and (max-width: 35rem) {
 		display: none;
@@ -100,7 +115,7 @@ export const BottomWrap = styled.div`
 
 export const Img = styled.img`
 	width: 100%;
-	max-width: 1200px;
+	/* max-width: 900px; */
 `;
 
 export const EmailWrap = styled.div`
