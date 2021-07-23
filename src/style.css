@@ -3,10 +3,10 @@
   width: 100%;
   height: 100%;
 
-  --gradient-color-1: #3e356e;
+  --gradient-color-1: #bcdcf9;
   --gradient-color-2: #6552a0;
-  --gradient-color-3: #9680c2;
-  --gradient-color-4: #d5d5eb;
+  --gradient-color-3: #3e356e; /* #9680c2; */
+  --gradient-color-4: #4852b3; /* #d5d5eb; */
 
   z-index: 0;
 
