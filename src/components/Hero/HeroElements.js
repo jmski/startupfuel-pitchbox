@@ -26,10 +26,6 @@ export const Section = styled.div`
 	justify-content: space-between;
 	align-items: center;
 
-	@media screen and (max-width: 35rem) {
-		width: 100%;
-	}
-
 
 /* 
 	display: grid;
@@ -47,7 +43,7 @@ export const HeroContent = styled.div`
 	z-index: 5;
 
 	@media screen and (max-width: 35rem) {
-		margin-top: 25rem;
+		margin-top: 20rem;
 		margin-left: 2rem;
 	}
 `;
@@ -103,9 +99,6 @@ export const TopWrap = styled.div`
 
 	@media screen and (max-width: 35rem) {
 		display: block;
-		top: 0;
-		margin-top: 7rem;
-
 	}
 `;
 
@@ -145,6 +138,7 @@ export const EmailInput = styled.input`
 	border: 2px solid var(--color-light-neutral);
 
 	@media screen and (max-width: 35rem) {
+		width: 100vw;
 		font-size: 1rem;
 
 	}
